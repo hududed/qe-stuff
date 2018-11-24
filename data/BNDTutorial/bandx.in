@@ -1,5 +1,0 @@
-&BANDS
-  prefix="1"
-  outdir="."
-  filband="PREFIX.dat"
-/
