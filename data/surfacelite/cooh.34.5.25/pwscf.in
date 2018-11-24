@@ -6,9 +6,7 @@
     restart_mode = 'from_scratch'
     etot_conv_thr = 1.d-6
     forc_conv_thr = 1.d-5
-    
 /
-
 &system
     ibrav = 0
     nat = 152
@@ -19,7 +17,6 @@
     degauss = 0.1
     vdw_corr='grimme-d2'
 /
-
 &electrons
     diagonalization = 'david'
     diago_thr_init = 1.d-4
@@ -27,19 +24,13 @@
     mixing_beta = 0.7
     conv_thr =  1.d-8
 /	
-
 &ions
-    
 /
-
-
 ATOMIC_SPECIES
 Cu 63.546 Cu.pbe-n-van_ak.UPF
 C   12.0107 C.pbe-mt_gipaw.UPF
 O   15.9994 O.pbe-van_gipaw.UPF
 H  1.007825032 H.pbe-van_ak.UPF
-
-
 ATOMIC_POSITIONS angstrom
 Cu       0.000040767   0.001455737   7.365700555
 Cu       1.844651282   1.706608938   7.366399603
@@ -193,11 +184,8 @@ C        3.589423128   7.116652446  19.935333987
 O        2.867243351   7.891339610  20.537114071
 O        4.374851294   6.147330629  20.531831950
 H        4.209063469   6.250612431  21.499911214
-
-
 K_POINTS automatic
 4 2 1  0 0 0
-
 CELL_PARAMETERS angstrom
 7.378073983 0.000000000 0.0000000000
 0.000000000 17.038932 0.0000000000

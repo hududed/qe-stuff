@@ -9,7 +9,6 @@
     wf_collect = .true.
     verbosity='high'
 /
-
 &system
     ibrav = 0 
     nat = 48
@@ -20,7 +19,6 @@
     degauss = 0.1
     vdw_corr='grimme-d2'
 /
-
 &electrons
     diagonalization = 'david'
     diago_thr_init = 1.d-4
@@ -28,15 +26,10 @@
     mixing_beta = 0.7
     conv_thr =  1.d-10
 /	
-
 &ions
-
 /
-
-
 ATOMIC_SPECIES
 C   12.0107 C.pbe-mt_gipaw.UPF
-
 ATOMIC_POSITIONS angstrom
 C 0.000000000 0.710480657 5.02539
 C 0.000000000 2.129994783 5.03412
@@ -86,10 +79,8 @@ C 4.918110075 13.488866414 5.02043
 C 4.917964401 14.908699225 5.01114
 C 6.146703658 12.779202422 5.00313
 C 6.148749302 15.619367815 5.00802
-
 K_POINTS automatic
 4 2 1 0 0 0
-
 CELL_PARAMETERS angstrom
 7.378073983 0.000000000 0.0000000000
 0.000000000 17.038932 0.0000000000

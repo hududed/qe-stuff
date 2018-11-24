@@ -7,7 +7,6 @@
     etot_conv_thr = 1.d-6
     forc_conv_thr = 1.d-5
 /
-
 &system
     ibrav = 0 
     nat = 98
@@ -18,7 +17,6 @@
     degauss = 0.1
     tot_charge=1
 /
-
 &electrons
     diagonalization = 'david'
     diago_thr_init = 1.d-4
@@ -26,15 +24,11 @@
     mixing_beta = 0.7
     conv_thr =  1.d-10
 /	
-
 &ions
 /
-
 ATOMIC_SPECIES
 C   12.0107 C.pbe-mt_gipaw.UPF
 C_h 12.0107 C.star1s-pbe-mt_gipaw.UPF
-
-
 ATOMIC_POSITIONS crystal
 C        0.095244476   0.047622238   0.500000000
 C        0.047622238   0.095244476   0.500000000
@@ -134,12 +128,8 @@ C        0.809521862   0.904760926   0.500000000
 C        0.761908993   0.952379815   0.500000000
 C        0.952377762   0.904755524   0.500000000
 C        0.904755524   0.952377762   0.500000000
-
-
 K_POINTS automatic
 1 1 1 0 0 0
-
-
 CELL_PARAMETERS angstrom
 17.297 0.000000000 0.0000000000
 -8.6485 14.9796414 0.0000000000

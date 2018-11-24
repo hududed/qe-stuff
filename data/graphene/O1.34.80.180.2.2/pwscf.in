@@ -7,7 +7,6 @@
     etot_conv_thr = 1.d-6
     forc_conv_thr = 1.d-5
 /
-
 &system
     ibrav = 0 
     nat = 49
@@ -19,7 +18,6 @@
     degauss = 0.1
     vdw_corr='grimme-d2'
 /
-
 &electrons
     diagonalization = 'david'
     diago_thr_init = 1.d-4
@@ -27,16 +25,11 @@
     mixing_beta = 0.7
     conv_thr =  1.d-10
 /	
-
 &ions
-
 /
-
-
 ATOMIC_SPECIES
 C   12.0107 C.pbe-mt_gipaw.UPF
 O   15.9994 O.pbe-van_gipaw.UPF
-
 ATOMIC_POSITIONS angstrom
 C	0	0.709999628	5
 C	0	2.129822365	5
@@ -87,12 +80,8 @@ C	4.918715988	13.48919863	5
 C	4.918715988	14.90902136	5
 C	6.148394986	12.77915472	5
 C	6.148394986	15.61906529	5
-
-
 K_POINTS automatic
 2 2 1 0 0 0
-
-
 CELL_PARAMETERS angstrom
 7.378073983  0.000000000 0.0000000000
 0 17.038932  0.0000000000
