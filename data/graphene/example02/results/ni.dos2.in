@@ -1,6 +1,0 @@
- &dos
-    outdir='/short/y35/tjf502/QE-5.4.0-bw/tempdir/'
-    prefix='ni'
-    fildos='ni.dos',
-    Emin=5.0, Emax=25.0, DeltaE=0.1
- /
