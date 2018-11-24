@@ -1,0 +1,24 @@
+ &control
+    calculation='scf'
+    restart_mode='from_scratch',
+    prefix='ni',
+    pseudo_dir = '/short/y35/tjf502/QE-5.4.0-bw/pseudo/',
+    outdir='/short/y35/tjf502/QE-5.4.0-bw/tempdir/'
+ /
+ &system
+    ibrav=2, celldm(1) =6.48, nat=1, ntyp=1,
+    ecutwfc = 24.0, ecutrho = 288.0,
+    occupations='smearing', 
+    smearing='methfessel-paxton', 
+    degauss=0.02
+ /
+ &electrons
+    conv_thr = 1.0e-10
+    mixing_beta = 0.7 
+ /
+ATOMIC_SPECIES
+ Ni 58.69 Ni.pz-nd-rrkjus.UPF
+ATOMIC_POSITIONS
+ Ni 0.0 0.0 0.0
+K_POINTS {automatic}
+ 8 8 8 0 0 0 

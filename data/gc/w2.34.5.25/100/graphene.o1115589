@@ -1,0 +1,15 @@
+[r2461:16875] 15 more processes have sent help message help-mpi-api.txt / mpi-abort
+[r2461:16875] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+
+======================================================================================
+                  Resource Usage on 2016-12-14 08:36:28:
+   Job Id:             1115589.r-man2
+   Project:            y35
+   Exit Status:        0
+   Service Units:      0.02
+   NCPUs Requested:    16                     NCPUs Used: 16              
+                                           CPU Time Used: 00:00:08                                   
+   Memory Requested:   16.0GB                Memory Used: 0B              
+   Walltime requested: 02:00:00            Walltime Used: 00:00:05        
+   JobFS requested:    512.0MB                JobFS used: 0B              
+======================================================================================

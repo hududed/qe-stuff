@@ -1,0 +1,42 @@
+
+     Program POST-PROC v.5.4.0 starts on  7Feb2018 at 18: 5:22 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on       1 processor cores
+     Number of MPI processes:                 1
+     Threads/MPI process:                     1
+     Reading header from file  AlAsresm-1.0
+
+   Info: using nr1, nr2, nr3 values from input
+     Reading data from file  AlAsresm-1.0
+
+     Writing data to be plotted to file AlAs110.pp_isostm-.dat
+ 
+     image of z coordinates of the constant isovalue
+     -----------------------------------------------
+     max density found:   2.879203391000000E-002
+     min density found:   1.444391539000000E-008
+     isovalue:            5.000000000000000E-005
+ 
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum         349     349      1                24607    24607       7
+ 
+     Min, Max, imaginary charge:    60.803338   69.332632    0.000000
+     Plot Type: 2D contour             Output format: gnuplot x,y,f
+ 
+     POST-PROC    :     0.42s CPU         1.12s WALL
+
+ 
+   This run was terminated on:  18: 5:24   7Feb2018            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

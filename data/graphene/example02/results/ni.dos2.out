@@ -1,0 +1,46 @@
+
+     Program DOS v.5.4.0 starts on  7Feb2018 at 18: 8:18 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on       1 processor cores
+     Number of MPI processes:                 1
+     Threads/MPI process:                     1
+
+   Info: using nr1, nr2, nr3 values from input
+
+   Info: using nr1, nr2, nr3 values from input
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation      =  SLA  PZ   NOGX NOGC ( 1  1  0  0 0 0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+               file Ni.pz-nd-rrkjus.UPF: wavefunction(s)  4S renormalized
+ 
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum         421     139     55                 5601     1067     283
+ 
+     Generating pointlists ...
+     new r_m :   0.2917 (alat units)  1.8901 (a.u.) for type    1
+
+     Check: negative/imaginary core charge=   -0.000015    0.000000
+
+     Tetrahedra used
+
+ 
+     DOS          :     6.09s CPU        14.49s WALL
+
+ 
+   This run was terminated on:  18: 8:33   7Feb2018            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

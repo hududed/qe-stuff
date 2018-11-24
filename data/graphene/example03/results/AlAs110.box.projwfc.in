@@ -1,0 +1,26 @@
+ &projwfc
+    prefix  = 'AlAs110'
+    outdir='/short/y35/tjf502/QE-5.4.0-bw/tempdir/',
+    ngauss=0
+    degauss=0.01
+    DeltaE=0.02
+    tdosinboxes=.true.
+    plotboxes=.true.
+    n_proj_boxes=8
+
+!! Boxes centered on the first vacuum layer:
+  !! 1) above the surface Al
+    irmin(1,1)= 0, irmax(1,1)= 2, irmin(2,1)= 0, irmax(2,1)= 2, irmin(3,1)=63, irmax(3,1)=65,
+  !! 2) above the surface As
+    irmin(1,2)= 9, irmax(1,2)=11, irmin(2,2)= 5, irmax(2,2)= 7, irmin(3,2)=63, irmax(3,2)=65,
+  !! 3) above the 2nd layer Al
+    irmin(1,3)= 9, irmax(1,3)=11, irmin(2,3)=14, irmax(2,3)=16, irmin(3,3)=63, irmax(3,3)=65,
+  !! 4) as large as the surface unit cell
+    irmin(1,4)= 1, irmax(1,4)=18, irmin(2,4)= 1, irmax(2,4)=27, irmin(3,4)=63, irmax(3,4)=65,
+
+!! Same as above, centered on the second vacuum layer:
+    irmin(1,5)= 0, irmax(1,5)= 2, irmin(2,5)= 0, irmax(2,5)= 2, irmin(3,5)=72, irmax(3,5)=74,
+    irmin(1,6)= 9, irmax(1,6)=11, irmin(2,6)= 5, irmax(2,6)= 7, irmin(3,6)=72, irmax(3,6)=74,
+    irmin(1,7)= 9, irmax(1,7)=11, irmin(2,7)=14, irmax(2,7)=16, irmin(3,7)=72, irmax(3,7)=74,
+    irmin(1,8)= 1, irmax(1,8)=18, irmin(2,8)= 1, irmax(2,8)=27, irmin(3,8)=72, irmax(3,8)=74,
+ /

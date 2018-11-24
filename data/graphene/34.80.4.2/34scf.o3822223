@@ -1,0 +1,16 @@
+/jobfs/local/pbs/mom_priv/jobs/3822223.r-man2.SC: line 19: /home/549/hxw549: is a directory
+/jobfs/local/pbs/mom_priv/jobs/3822223.r-man2.SC: line 20: /home/549/hxw549: is a directory
+/jobfs/local/pbs/mom_priv/jobs/3822223.r-man2.SC: line 21: /home/549/hxw549: is a directory
+
+======================================================================================
+                  Resource Usage on 2017-04-11 10:07:23:
+   Job Id:             3822223.r-man2
+   Project:            y35
+   Exit Status:        126
+   Service Units:      12.72
+   NCPUs Requested:    56                     NCPUs Used: 56              
+                                           CPU Time Used: 02:11:49                                   
+   Memory Requested:   128.0GB               Memory Used: 5.2GB           
+   Walltime requested: 07:00:00            Walltime Used: 00:10:54        
+   JobFS requested:    1.0GB                  JobFS used: 112.0MB         
+======================================================================================

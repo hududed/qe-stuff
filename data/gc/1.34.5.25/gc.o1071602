@@ -1,0 +1,13 @@
+
+======================================================================================
+                  Resource Usage on 2016-12-13 11:26:33:
+   Job Id:             1071602.r-man2
+   Project:            y35
+   Exit Status:        0
+   Service Units:      330.65
+   NCPUs Requested:    64                     NCPUs Used: 64              
+                                           CPU Time Used: 330:21:38                                  
+   Memory Requested:   128.0GB               Memory Used: 75.43GB         
+   Walltime requested: 10:00:00            Walltime Used: 05:09:59        
+   JobFS requested:    1.0GB                  JobFS used: 64.0MB          
+======================================================================================

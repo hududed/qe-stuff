@@ -1,0 +1,13 @@
+
+======================================================================================
+                  Resource Usage on 2017-03-12 12:47:42:
+   Job Id:             3034617.r-man2
+   Project:            y35
+   Exit Status:        0
+   Service Units:      165.88
+   NCPUs Requested:    28                     NCPUs Used: 28              
+                                           CPU Time Used: 132:42:48                                  
+   Memory Requested:   16.0GB                Memory Used: 12.26GB         
+   Walltime requested: 15:00:00            Walltime Used: 04:44:22        
+   JobFS requested:    512.0MB                JobFS used: 112.0MB         
+======================================================================================

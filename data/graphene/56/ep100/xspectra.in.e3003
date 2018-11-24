@@ -1,0 +1,2 @@
+/var/spool/torque/mom_priv/jobs/3003.fb11-nx-main.fh-muenster.de.SC: line 1: syntax error near unexpected token `&'
+/var/spool/torque/mom_priv/jobs/3003.fb11-nx-main.fh-muenster.de.SC: line 1: `&input_xspectra'

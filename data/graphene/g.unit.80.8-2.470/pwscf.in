@@ -1,0 +1,46 @@
+&control
+    calculation = 'nscf'
+    prefix = 'graphene'
+    pseudo_dir = '/home/549/hxw549/Short/pseudopotentials'
+    outdir = './'
+    restart_mode = 'from_scratch'
+    etot_conv_thr = 1.d-6
+    forc_conv_thr = 1.d-5
+    wf_collect = .true.
+    verbosity='high'
+/
+
+&system
+    ibrav = 4
+    a = 2.471
+    c = 10
+    cosAB = -0.5
+    cosAC = 1
+    nat = 2
+    ntyp = 1
+    ecutwfc = 80
+    occupations = 'smearing'
+    smearing = 'gaussian'
+    degauss = 0.1
+    vdw_corr='grimme-d2'
+/
+
+&electrons
+    diagonalization = 'david'
+    diago_thr_init = 1.d-4
+    mixing_mode = 'local-TF'
+    mixing_beta = 0.7
+    conv_thr =  1.d-10
+/	
+
+
+ATOMIC_SPECIES
+C 12.0107 C.pbe-mt_gipaw.UPF
+
+ATOMIC_POSITIONS crystal
+C 0.6666667 0.3333333 0.0000000
+C 0.3333333 0.6666667 0.0000000
+
+K_POINTS automatic
+12 12 1 0 0 0
+

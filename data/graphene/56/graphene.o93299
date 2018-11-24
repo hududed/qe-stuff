@@ -1,0 +1,13 @@
+
+======================================================================================
+                  Resource Usage on 2016-11-04 23:04:37:
+   Job Id:             93299.r-man2
+   Project:            y35
+   Exit Status:        0
+   Service Units:      4.23
+   NCPUs Requested:    64                     NCPUs Used: 64              
+                                           CPU Time Used: 04:05:10                                   
+   Memory Requested:   128.0GB               Memory Used: 4.34GB          
+   Walltime requested: 48:00:00            Walltime Used: 00:03:58        
+   JobFS requested:    1.0GB                  JobFS used: 64.0MB          
+======================================================================================

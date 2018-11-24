@@ -1,0 +1,53 @@
+
+     Program POST-PROC v.5.4.0 starts on  7Feb2018 at 18: 5:18 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on       1 processor cores
+     Number of MPI processes:                 1
+     Threads/MPI process:                     1
+
+     Reading data from directory:
+     /short/y35/tjf502/QE-5.4.0-bw/tempdir/AlAs110.save
+
+   Info: using nr1, nr2, nr3 values from input
+
+   Info: using nr1, nr2, nr3 values from input
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation      =  SLA  PZ   NOGX NOGC ( 1  1  0  0 0 0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+ 
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum         349     349    109                24607    24607    4469
+ 
+
+     Calling punch_plot, plot_num =   5
+     Use the true wfcs
+     Sample bias          = -1.0000 eV
+
+     STM:      0.06s cpu time
+     Writing data to file  AlAsresm-1.0
+     Reading data from file  AlAsresm-1.0
+
+     Writing data to be plotted to file AlAs110-1.0
+     Min, Max, imaginary charge:     0.000099    0.025775    0.000000
+     Plot Type: 2D contour             Output format: plotrho.x    
+ 
+     POST-PROC    :     0.19s CPU         0.71s WALL
+
+ 
+   This run was terminated on:  18: 5:18   7Feb2018            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

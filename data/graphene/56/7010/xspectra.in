@@ -1,0 +1,50 @@
+&input_xspectra
+	calculation = 'xanes_dipole'
+	prefix = 'graphene'
+	outdir = './'
+	xonly_plot = .false.
+	xniter = 1000
+	xcheck_conv = 50
+	xerror = 0.001
+
+	x_save_file = 'xspectra.save'
+
+
+
+	xiabs = 2
+	xcoordcrys = .false.
+        xepsilon(1) = 7.0
+	xepsilon(2) = 0.0
+        xepsilon(3) = 10.0
+            
+
+/
+
+&plot
+	xgamma = 0.8
+
+	xnepoint = 1000
+
+	xemin = -10.0
+	xemax = 40.0
+
+	terminator = .true.
+
+	cut_occ_states = .true.
+/
+
+&pseudos
+	filecore = '/home/549/hxw549/Short/graphene/C.wfc'
+
+	r_paw(1) = 1.0
+/
+
+&cut_occ
+	cut_desmooth = 0.1
+	cut_stepl = 0.01
+/
+
+8 8 1 0 0 0
+
+EOF
+

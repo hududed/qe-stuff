@@ -1,0 +1,8 @@
+ &projwfc
+    prefix  = 'AlAs110'
+    outdir='/short/y35/tjf502/QE-5.4.0-bw/tempdir/',
+    ngauss=0
+    degauss=0.01
+    DeltaE=0.02
+    tdosinboxes=.false.
+ /

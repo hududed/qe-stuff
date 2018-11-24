@@ -1,0 +1,7 @@
+&BANDS
+  prefix="graphene"
+  outdir="."
+  filband="bands.dat"
+  lsym=.true.
+/
+

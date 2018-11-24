@@ -1,0 +1,58 @@
+ &control
+    calculation='nscf',
+    restart_mode='from_scratch',
+    pseudo_dir = '.',
+    outdir='.',
+    prefix='1',
+    wf_collect=.true.
+    verbosity='high'
+    forc_conv_thr = 0.01D-3
+    etot_conv_thr = 1D-6
+    wf_collect = .true.
+ /
+ &system
+    ibrav = 0,
+    nat = 11,
+    ntyp = 4,
+    ecutwfc = 50,
+    occupations='smearing',
+    degauss=0.005
+    vdw_corr='dft-d'
+    tot_charge=0.5
+ /
+ &electrons
+    conv_thr = 1.0e-9
+    electron_maxstep = 150,
+    mixing_beta=0.3
+    diagonalization='cg'
+ /
+ &ions
+    ion_dynamics = 'bfgs'
+ /
+ &cell
+    cell_factor = 10
+    cell_dynamics='damp-w'
+/
+ATOMIC_SPECIES
+P 30.97 P.pbe-n-van.UPF
+Zr 91.224 Zr.pbe-nsp-van.UPF
+O 16 O.pbe-rrkjus.UPF
+H 1 H.pbe-rrkjus.UPF
+ATOMIC_POSITIONS {crystal}
+Zr       0.000381444   0.000263039  -0.000011516
+P        0.333734416   0.666926994   0.300249262
+P        0.667031911   0.333607637   0.699728761
+O        0.139956220   0.782172447   0.215796553
+O        0.218465107   0.357889207   0.215824072
+O        0.642777110   0.860716177   0.215852669
+O        0.860780811   0.218340246   0.784215740
+O        0.782240518   0.642635199   0.784154708
+O        0.357982949   0.139830740   0.784122021
+H        0.333724901   0.666936549   0.551898251
+H        0.667099278   0.333619644   0.448080371
+K_POINTS {automatic}
+12 12 12 0 0 0
+CELL_PARAMETERS {angstrom}
+5.417202237 7.58679E-06 -1.5423E-05
+-2.708594549  4.691425372 4.98917E-06
+-1.58786E-05  -3.23754E-06  5.575997826

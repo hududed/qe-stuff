@@ -1,0 +1,2253 @@
+
+     Program XSpectra v.5.4.0 starts on  4Feb2017 at  4:23: 3 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on      28 processor cores
+     Number of MPI processes:                28
+     Threads/MPI process:                     1
+     R & G space division:  proc/nbgrp/npool/nimage =      28
+
+     -------------------------------------------------------------------------
+                    __  ____                 _
+                    \ \/ / _\_ __   ___  ___| |_ _ __ __ _
+                     \  /\ \| '_ \ / _ \/ __| __| \__/ _\ |
+                     /  \_\ \ |_) |  __/ (__| |_| | | (_| |
+                    /_/\_\__/ .__/ \___|\___|\__|_|  \__,_|
+                            |_|
+
+     In publications arising from the use of XSpectra, please cite:
+      - O. Bunau and M. Calandra,
+        Phys. Rev. B 87, 205105 (2013)
+      - Ch. Gougoussis, M. Calandra, A. P. Seitsonen, F. Mauri,
+        Phys. Rev. B 80, 075102 (2009)
+      - M. Taillefumier, D. Cabaret, A. M. Flank, and F. Mauri,
+        Phys. Rev. B 66, 195107 (2002)
+
+     -------------------------------------------------------------------------
+                                Reading input_file
+     -------------------------------------------------------------------------
+
+     calculation: xanes_dipole
+
+     xepsilon  [cartesian coordinates]:   0.000000   0.000000   1.000000
+
+     xonly_plot: FALSE
+        => complete calculation: Lanczos + spectrum plot
+
+     filecore (core-wavefunction file): /home/549/hxw549/Sho
+ 
+     main plot parameters:
+        cut_occ_states: TRUE
+        gamma_mode:  constant
+        -> using xgamma [eV]:  0.20
+        xemin [eV]: -10.00
+        xemax [eV]:  40.00
+        xnepoint: 1000
+        energy zero automatically set to the Fermi level
+
+     Fermi level determined from SCF save directory (gc.save)
+     NB: For an insulator (SCF calculated with occupations="fixed")
+         the Fermi level will be placed at the position of HOMO.
+ 
+     WARNING: variable ef_r is obsolete
+
+     -------------------------------------------------------------------------
+                      Reading SCF save directory: gc.save
+     -------------------------------------------------------------------------
+
+
+     Reading data from directory:
+     ./gc.save
+
+   Info: using nr1, nr2, nr3 values from input
+
+   Info: using nr1, nr2, nr3 values from input
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation      =  SLA  PW   PBE  PBE ( 1  4  3  4 0 0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+     WARNING: atomic wfc #  2 for atom type 4 has zero norm
+     WARNING: atomic wfc #  4 for atom type 4 has zero norm
+     WARNING: atomic wfc #  5 for atom type 4 has zero norm
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         408     408    108                73226    73226    9928
+     Max         410     410    109                73231    73231    9931
+     Sum       11433   11433   3039              2050409  2050409  278033
+ 
+
+     negative rho (up, down):  2.073E-03 0.000E+00
+
+     the Fermi energy is     3.3662 ev
+
+     -------------------------------------------------------------------------
+                           Getting the Fermi energy 
+     -------------------------------------------------------------------------
+
+     From SCF save directory:
+        ef    [eV]:    3.3662
+
+     -> ef (in eV) will be written in x_save_file
+
+     -------------------------------------------------------------------------
+                           Energy zero of the spectrum 
+     -------------------------------------------------------------------------
+
+     -> ef will be used as energy zero of the spectrum
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         408     408    112                73226    73226   10536
+     Max         410     410    113                73231    73231   10544
+     Sum       11433   11433   3137              2050409  2050409  295129
+ 
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =      13.9425  a.u.
+     unit-cell volume          =   21209.0878 (a.u.)^3
+     number of atoms/cell      =          150
+     number of atomic types    =            5
+     number of electrons       =      1299.00
+     number of Kohn-Sham states=          780
+     kinetic-energy cutoff     =      80.0000  Ry
+     charge density cutoff     =     320.0000  Ry
+     Exchange-correlation      =  SLA  PW   PBE  PBE ( 1  4  3  4 0 0)
+
+     celldm(1)=  13.942539  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   2.309401   0.000000 )  
+               a(3) = (   0.000000   0.000000   3.388418 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  0.433013  0.000000 )  
+               b(3) = (  0.000000  0.000000  0.295123 )  
+
+
+     PseudoPot. # 1 for Cu read from file:
+     /home/549/hxw549/Short/pseudopotentials/Cu.pbe-n-van_ak.UPF
+     MD5 check sum: 601f7c30f7467666bec936e0661ce3e1
+     Pseudo is Ultrasoft + core correction, Zval = 11.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  867 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with  8 coefficients,  rinner =    1.400   1.400   1.400
+                                                       1.400   1.400
+
+     PseudoPot. # 2 for C  read from file:
+     /home/549/hxw549/Short/pseudopotentials/C.star1s-pbe-mt_gipaw.UPF
+     MD5 check sum: ef0cb3dee31bd9e4ba2a832a2c716264
+     Pseudo is Norm-conserving, Zval =  5.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of 1073 points,  1 beta functions with: 
+                l(1) =   0
+
+     PseudoPot. # 3 for C  read from file:
+     /home/549/hxw549/Short/pseudopotentials/C.pbe-mt_gipaw.UPF
+     MD5 check sum: 5ac2f21f2c440b14befe521540822c15
+     Pseudo is Norm-conserving, Zval =  4.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of 1073 points,  1 beta functions with: 
+                l(1) =   0
+
+     PseudoPot. # 4 for O  read from file:
+     /home/549/hxw549/Short/pseudopotentials/O.pbe-van_gipaw.UPF
+     MD5 check sum: 5ce2a047509d4f331db576c963e74b29
+     Pseudo is Ultrasoft, Zval =  6.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of 1095 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 5 for H  read from file:
+     /home/549/hxw549/Short/pseudopotentials/H.pbe-van_ak.UPF
+     MD5 check sum: 077eb6d537518a38cb46c6de387227b7
+     Pseudo is Ultrasoft, Zval =  1.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  615 points,  1 beta functions with: 
+                l(1) =   0
+     Q(r) pseudized with  8 coefficients,  rinner =    0.800
+
+     atomic species   valence    mass     pseudopotential
+        Cu            11.00    63.54600     Cu( 1.00)
+        C_h            5.00    12.01070     C ( 1.00)
+        C              4.00    12.01070     C ( 1.00)
+        O              6.00    15.99940     O ( 1.00)
+        H              1.00     1.00783     H ( 1.00)
+
+     No symmetry found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Cu  tau(   1) = (   0.0000278  -0.0002768   0.9972875  )
+         2           Cu  tau(   2) = (   0.2500214   0.2300592   0.9964781  )
+         3           Cu  tau(   3) = (   0.4999379  -0.0008021   0.9967565  )
+         4           Cu  tau(   4) = (   0.7499938   0.2301066   0.9966299  )
+         5           Cu  tau(   5) = (   0.0000368   0.4611612   0.9964670  )
+         6           Cu  tau(   6) = (   0.2501556   0.6926513   0.9969316  )
+         7           Cu  tau(   7) = (   0.5000725   0.4614195   0.9968158  )
+         8           Cu  tau(   8) = (   0.7500733   0.6926077   0.9969288  )
+         9           Cu  tau(   9) = (   0.0001817   0.9237007   0.9969673  )
+        10           Cu  tau(  10) = (   0.2501864   1.1547399   0.9969388  )
+        11           Cu  tau(  11) = (   0.5001000   0.9236813   0.9971421  )
+        12           Cu  tau(  12) = (   0.7500350   1.1547883   0.9969509  )
+        13           Cu  tau(  13) = (   0.0000256   1.3862740   0.9964245  )
+        14           Cu  tau(  14) = (   0.2500182   1.6173874   0.9965674  )
+        15           Cu  tau(  15) = (   0.5000855   1.3860092   0.9969524  )
+        16           Cu  tau(  16) = (   0.7500020   1.6173469   0.9967271  )
+        17           Cu  tau(  17) = (   0.0000589   1.8476413   0.9974502  )
+        18           Cu  tau(  18) = (   0.2497677   2.0783648   0.9976647  )
+        19           Cu  tau(  19) = (   0.4999083   1.8482307   0.9967929  )
+        20           Cu  tau(  20) = (   0.7501842   2.0783708   0.9971403  )
+        21           Cu  tau(  21) = (   0.0001222   0.2301461   1.2453200  )
+        22           Cu  tau(  22) = (   0.2499160  -0.0003375   1.2457320  )
+        23           Cu  tau(  23) = (   0.5000760   0.2296546   1.2445751  )
+        24           Cu  tau(  24) = (   0.7501253  -0.0008082   1.2452774  )
+        25           Cu  tau(  25) = (   0.0004560   0.6919042   1.2444398  )
+        26           Cu  tau(  26) = (   0.2502604   0.4604283   1.2441641  )
+        27           Cu  tau(  27) = (   0.5005290   0.6920792   1.2449013  )
+        28           Cu  tau(  28) = (   0.7502594   0.4606436   1.2444322  )
+        29           Cu  tau(  29) = (   0.0004845   1.1556372   1.2443765  )
+        30           Cu  tau(  30) = (   0.2506070   0.9237561   1.2452404  )
+        31           Cu  tau(  31) = (   0.5004996   1.1552771   1.2450168  )
+        32           Cu  tau(  32) = (   0.7506209   0.9237195   1.2449593  )
+        33           Cu  tau(  33) = (   0.0001889   1.6170091   1.2456247  )
+        34           Cu  tau(  34) = (   0.2502719   1.3869351   1.2442606  )
+        35           Cu  tau(  35) = (   0.5000476   1.6177597   1.2448016  )
+        36           Cu  tau(  36) = (   0.7502719   1.3867859   1.2444933  )
+        37           Cu  tau(  37) = (   0.0001297   2.0783238   1.2457288  )
+        38           Cu  tau(  38) = (   0.2498837   1.8474392   1.2461817  )
+        39           Cu  tau(  39) = (   0.4998735   2.0782826   1.2456599  )
+        40           Cu  tau(  40) = (   0.7501762   1.8480311   1.2455042  )
+        41           Cu  tau(  41) = (   0.0002718  -0.0011296   1.4951325  )
+        42           Cu  tau(  42) = (   0.2502480   0.2303139   1.4952280  )
+        43           Cu  tau(  43) = (   0.5000574  -0.0006898   1.4948808  )
+        44           Cu  tau(  44) = (   0.7505846   0.2291334   1.4938282  )
+        45           Cu  tau(  45) = (   0.0009624   0.4607787   1.4943109  )
+        46           Cu  tau(  46) = (   0.2514145   0.6908209   1.4926831  )
+        47           Cu  tau(  47) = (   0.5008195   0.4598745   1.4933701  )
+        48           Cu  tau(  48) = (   0.7516451   0.6913243   1.4932782  )
+        49           Cu  tau(  49) = (   0.0019318   0.9239193   1.4927730  )
+        50           Cu  tau(  50) = (   0.2514121   1.1564455   1.4932287  )
+        51           Cu  tau(  51) = (   0.5021641   0.9235540   1.4935214  )
+        52           Cu  tau(  52) = (   0.7518116   1.1562283   1.4932047  )
+        53           Cu  tau(  53) = (   0.0011789   1.3861859   1.4950249  )
+        54           Cu  tau(  54) = (   0.2501668   1.6161289   1.4962436  )
+        55           Cu  tau(  55) = (   0.5008242   1.3872970   1.4934908  )
+        56           Cu  tau(  56) = (   0.7508208   1.6176916   1.4943697  )
+        57           Cu  tau(  57) = (   0.0003793   1.8479269   1.4954295  )
+        58           Cu  tau(  58) = (   0.2502332   2.0783539   1.4953567  )
+        59           Cu  tau(  59) = (   0.5000263   1.8477072   1.4952729  )
+        60           Cu  tau(  60) = (   0.7499856   2.0782028   1.4954651  )
+        61           Cu  tau(  61) = (   0.0013816   0.2292930   1.7432885  )
+        62           Cu  tau(  62) = (   0.2507645  -0.0010149   1.7448229  )
+        63           Cu  tau(  63) = (   0.5007496   0.2295791   1.7436658  )
+        64           Cu  tau(  64) = (   0.7503272  -0.0006935   1.7445977  )
+        65           Cu  tau(  65) = (   0.0045463   0.6918465   1.7436705  )
+        66           Cu  tau(  66) = (   0.2520141   0.4626440   1.7460287  )
+        67           Cu  tau(  67) = (   0.5022653   0.6898550   1.7406262  )
+        68           Cu  tau(  68) = (   0.7517890   0.4595199   1.7411334  )
+        69           Cu  tau(  69) = (   0.0047011   1.1548943   1.7449750  )
+        70           Cu  tau(  70) = (   0.2530542   0.9228037   1.7325019  )
+        71           Cu  tau(  71) = (   0.5030046   1.1568396   1.7399891  )
+        72           Cu  tau(  72) = (   0.7561874   0.9239067   1.7398848  )
+        73           Cu  tau(  73) = (   0.0018646   1.6171245   1.7448817  )
+        74           Cu  tau(  74) = (   0.2519253   1.3838820   1.7474102  )
+        75           Cu  tau(  75) = (   0.5009287   1.6165997   1.7436324  )
+        76           Cu  tau(  76) = (   0.7529422   1.3868330   1.7421903  )
+        77           Cu  tau(  77) = (   0.0002295   2.0780753   1.7453542  )
+        78           Cu  tau(  78) = (   0.2505869   1.8481607   1.7445926  )
+        79           Cu  tau(  79) = (   0.5005487   2.0784516   1.7451245  )
+        80           Cu  tau(  80) = (   0.7507322   1.8473351   1.7448549  )
+        81           Cu  tau(  81) = (   0.0007331   0.0000523   1.9906293  )
+        82           Cu  tau(  82) = (   0.2525995   0.2291339   1.9904422  )
+        83           Cu  tau(  83) = (   0.5012472  -0.0005218   1.9921329  )
+        84           Cu  tau(  84) = (   0.7505674   0.2306852   1.9894324  )
+        85           Cu  tau(  85) = (   0.0042086   0.4583194   1.9895302  )
+        86           Cu  tau(  86) = (   0.2533238   0.6859888   1.9919788  )
+        87           Cu  tau(  87) = (   0.5013086   0.4599114   1.9907049  )
+        88           Cu  tau(  88) = (   0.7545155   0.6843983   1.9888510  )
+        89           Cu  tau(  89) = (  -0.0132795   0.9222968   1.9898577  )
+        90           Cu  tau(  90) = (   0.2536667   1.1630440   1.9871555  )
+        91           Cu  tau(  91) = (   0.5253338   0.9231525   1.9735697  )
+        92           Cu  tau(  92) = (   0.7554366   1.1624939   1.9907504  )
+        93           Cu  tau(  93) = (   0.0065718   1.3880187   1.9935465  )
+        94           Cu  tau(  94) = (   0.2526338   1.6190218   1.9906841  )
+        95           Cu  tau(  95) = (   0.5015104   1.3866197   1.9900095  )
+        96           Cu  tau(  96) = (   0.7522394   1.6149579   1.9899113  )
+        97           Cu  tau(  97) = (   0.0003722   1.8475400   1.9923328  )
+        98           Cu  tau(  98) = (   0.2509673   2.0779645   1.9916155  )
+        99           Cu  tau(  99) = (   0.5021872   1.8468334   1.9901015  )
+       100           Cu  tau( 100) = (   0.7506424   2.0783722   1.9912597  )
+       101           C   tau( 101) = (   0.0004633   0.0969185   2.3843282  )
+       102           C   tau( 102) = (   0.0006891   0.2895165   2.3836482  )
+       103           C   tau( 103) = (   0.1666585   0.0002933   2.3867679  )
+       104           C   tau( 104) = (   0.1673277   0.3850769   2.3903157  )
+       105           C   tau( 105) = (   0.3334301   0.0964012   2.3837630  )
+       106           C   tau( 106) = (   0.3336820   0.2893218   2.3841831  )
+       107           C   tau( 107) = (   0.5002537   0.0000620   2.3840475  )
+       108           C   tau( 108) = (   0.5005861   0.3857862   2.3862407  )
+       109           C   tau( 109) = (   0.6668225   0.0970972   2.3821103  )
+       110           C   tau( 110) = (   0.6668789   0.2897006   2.3793787  )
+       111           C   tau( 111) = (   0.8334847   0.0007853   2.3854227  )
+       112           C   tau( 112) = (   0.8338985   0.3855644   2.3821889  )
+       113           C   tau( 113) = (   0.0007087   0.6732112   2.4042444  )
+       114           C   tau( 114) = (   0.0006883   0.8656023   2.4132578  )
+       115           C   tau( 115) = (   0.1676172   0.5766239   2.4117145  )
+       116           C   tau( 116) = (   0.1654579   0.9620878   2.4451114  )
+       117           C   tau( 117) = (   0.3341007   0.6722734   2.4322949  )
+       118           C   tau( 118) = (   0.3325860   0.8659509   2.4520552  )
+       119           C   tau( 119) = (   0.5009673   0.5775343   2.4087855  )
+       120           C_h tau( 120) = (   0.5017558   0.9623222   2.4385030  )
+       121           O   tau( 121) = (   0.2791307   0.9260168   2.1070364  )
+       122           H   tau( 122) = (   0.3593119   0.9331071   2.2172280  )
+       123           C   tau( 123) = (   0.6676340   0.6738812   2.4034622  )
+       124           C   tau( 124) = (   0.6677084   0.8654913   2.4173642  )
+       125           C   tau( 125) = (   0.8341283   0.5782705   2.3892616  )
+       126           C   tau( 126) = (   0.8335734   0.9617234   2.4042072  )
+       127           C   tau( 127) = (   0.0003039   1.2497142   2.3939206  )
+       128           C   tau( 128) = (   0.0001774   1.4424794   2.3830571  )
+       129           C   tau( 129) = (   0.1667008   1.1540354   2.4176282  )
+       130           C   tau( 130) = (   0.1670336   1.5388816   2.3839660  )
+       131           C   tau( 131) = (   0.3339796   1.2508192   2.4128917  )
+       132           C   tau( 132) = (   0.3334608   1.4424981   2.3940123  )
+       133           C   tau( 133) = (   0.5014908   1.1552464   2.4213605  )
+       134           C   tau( 134) = (   0.4999382   1.5390631   2.3885153  )
+       135           C   tau( 135) = (   0.6672132   1.2498776   2.3964384  )
+       136           C   tau( 136) = (   0.6664090   1.4424231   2.3856276  )
+       137           C   tau( 137) = (   0.8339124   1.1534927   2.3972902  )
+       138           C   tau( 138) = (   0.8331158   1.5383499   2.3799296  )
+       139           C   tau( 139) = (  -0.0002215   1.8284265   2.3816093  )
+       140           C   tau( 140) = (  -0.0001179   2.0210629   2.3863119  )
+       141           C   tau( 141) = (   0.1667477   1.7318750   2.3825680  )
+       142           C   tau( 142) = (   0.1664658   2.1173245   2.3871874  )
+       143           C   tau( 143) = (   0.3331949   1.8285190   2.3874739  )
+       144           C   tau( 144) = (   0.3333678   2.0210706   2.3878090  )
+       145           C   tau( 145) = (   0.4996565   1.7319631   2.3871412  )
+       146           C   tau( 146) = (   0.5000751   2.1171626   2.3880207  )
+       147           C   tau( 147) = (   0.6665831   1.8281220   2.3863563  )
+       148           C   tau( 148) = (   0.6665579   2.0209124   2.3873875  )
+       149           C   tau( 149) = (   0.8330402   1.7312308   2.3813732  )
+       150           C   tau( 150) = (   0.8334119   2.1174588   2.3867188  )
+
+     number of k points=    64  gaussian smearing, width (Ry)=  0.1000
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   0.0312500
+        k(    2) = (   0.0000000   0.0541266   0.0000000), wk =   0.0312500
+        k(    3) = (   0.0000000   0.1082532   0.0000000), wk =   0.0312500
+        k(    4) = (   0.0000000   0.1623798   0.0000000), wk =   0.0312500
+        k(    5) = (   0.0000000   0.2165064   0.0000000), wk =   0.0312500
+        k(    6) = (   0.0000000   0.2706329   0.0000000), wk =   0.0312500
+        k(    7) = (   0.0000000   0.3247595   0.0000000), wk =   0.0312500
+        k(    8) = (   0.0000000   0.3788861   0.0000000), wk =   0.0312500
+        k(    9) = (   0.1250000   0.0000000   0.0000000), wk =   0.0312500
+        k(   10) = (   0.1250000   0.0541266   0.0000000), wk =   0.0312500
+        k(   11) = (   0.1250000   0.1082532   0.0000000), wk =   0.0312500
+        k(   12) = (   0.1250000   0.1623798   0.0000000), wk =   0.0312500
+        k(   13) = (   0.1250000   0.2165064   0.0000000), wk =   0.0312500
+        k(   14) = (   0.1250000   0.2706329   0.0000000), wk =   0.0312500
+        k(   15) = (   0.1250000   0.3247595   0.0000000), wk =   0.0312500
+        k(   16) = (   0.1250000   0.3788861   0.0000000), wk =   0.0312500
+        k(   17) = (   0.2500000   0.0000000   0.0000000), wk =   0.0312500
+        k(   18) = (   0.2500000   0.0541266   0.0000000), wk =   0.0312500
+        k(   19) = (   0.2500000   0.1082532   0.0000000), wk =   0.0312500
+        k(   20) = (   0.2500000   0.1623798   0.0000000), wk =   0.0312500
+        k(   21) = (   0.2500000   0.2165064   0.0000000), wk =   0.0312500
+        k(   22) = (   0.2500000   0.2706329   0.0000000), wk =   0.0312500
+        k(   23) = (   0.2500000   0.3247595   0.0000000), wk =   0.0312500
+        k(   24) = (   0.2500000   0.3788861   0.0000000), wk =   0.0312500
+        k(   25) = (   0.3750000   0.0000000   0.0000000), wk =   0.0312500
+        k(   26) = (   0.3750000   0.0541266   0.0000000), wk =   0.0312500
+        k(   27) = (   0.3750000   0.1082532   0.0000000), wk =   0.0312500
+        k(   28) = (   0.3750000   0.1623798   0.0000000), wk =   0.0312500
+        k(   29) = (   0.3750000   0.2165064   0.0000000), wk =   0.0312500
+        k(   30) = (   0.3750000   0.2706329   0.0000000), wk =   0.0312500
+        k(   31) = (   0.3750000   0.3247595   0.0000000), wk =   0.0312500
+        k(   32) = (   0.3750000   0.3788861   0.0000000), wk =   0.0312500
+        k(   33) = (   0.5000000   0.0000000   0.0000000), wk =   0.0312500
+        k(   34) = (   0.5000000   0.0541266   0.0000000), wk =   0.0312500
+        k(   35) = (   0.5000000   0.1082532   0.0000000), wk =   0.0312500
+        k(   36) = (   0.5000000   0.1623798   0.0000000), wk =   0.0312500
+        k(   37) = (   0.5000000   0.2165064   0.0000000), wk =   0.0312500
+        k(   38) = (   0.5000000   0.2706329   0.0000000), wk =   0.0312500
+        k(   39) = (   0.5000000   0.3247595   0.0000000), wk =   0.0312500
+        k(   40) = (   0.5000000   0.3788861   0.0000000), wk =   0.0312500
+        k(   41) = (   0.6250000   0.0000000   0.0000000), wk =   0.0312500
+        k(   42) = (   0.6250000   0.0541266   0.0000000), wk =   0.0312500
+        k(   43) = (   0.6250000   0.1082532   0.0000000), wk =   0.0312500
+        k(   44) = (   0.6250000   0.1623798   0.0000000), wk =   0.0312500
+        k(   45) = (   0.6250000   0.2165064   0.0000000), wk =   0.0312500
+        k(   46) = (   0.6250000   0.2706329   0.0000000), wk =   0.0312500
+        k(   47) = (   0.6250000   0.3247595   0.0000000), wk =   0.0312500
+        k(   48) = (   0.6250000   0.3788861   0.0000000), wk =   0.0312500
+        k(   49) = (   0.7500000   0.0000000   0.0000000), wk =   0.0312500
+        k(   50) = (   0.7500000   0.0541266   0.0000000), wk =   0.0312500
+        k(   51) = (   0.7500000   0.1082532   0.0000000), wk =   0.0312500
+        k(   52) = (   0.7500000   0.1623798   0.0000000), wk =   0.0312500
+        k(   53) = (   0.7500000   0.2165064   0.0000000), wk =   0.0312500
+        k(   54) = (   0.7500000   0.2706329   0.0000000), wk =   0.0312500
+        k(   55) = (   0.7500000   0.3247595   0.0000000), wk =   0.0312500
+        k(   56) = (   0.7500000   0.3788861   0.0000000), wk =   0.0312500
+        k(   57) = (   0.8750000   0.0000000   0.0000000), wk =   0.0312500
+        k(   58) = (   0.8750000   0.0541266   0.0000000), wk =   0.0312500
+        k(   59) = (   0.8750000   0.1082532   0.0000000), wk =   0.0312500
+        k(   60) = (   0.8750000   0.1623798   0.0000000), wk =   0.0312500
+        k(   61) = (   0.8750000   0.2165064   0.0000000), wk =   0.0312500
+        k(   62) = (   0.8750000   0.2706329   0.0000000), wk =   0.0312500
+        k(   63) = (   0.8750000   0.3247595   0.0000000), wk =   0.0312500
+        k(   64) = (   0.8750000   0.3788861   0.0000000), wk =   0.0312500
+
+     Dense  grid:  2050409 G-vectors     FFT dimensions: (  80, 192, 270)
+
+     Largest allocated arrays     est. size (Mb)     dimensions
+        Kohn-Sham Wavefunctions       109.41 Mb     (    9193,  780)
+        NL pseudopotentials           260.49 Mb     (    9193, 1857)
+        Each V/rho on FFT grid          2.34 Mb     (  153600)
+        Each G-vector array             0.56 Mb     (   73230)
+        G-vector shells                 0.27 Mb     (   35419)
+     Largest temporary arrays     est. size (Mb)     dimensions
+        Auxiliary wavefunctions       109.41 Mb     (    9193,  780)
+        Each subspace H/S matrix        1.03 Mb     (     260,  260)
+        Each <psi_i|beta_j> matrix     22.10 Mb     (    1857,  780)
+
+     The potential is recalculated from file :
+     ./gc.save/charge-density.dat
+
+
+     negative rho (up, down):  2.073E-03 0.000E+00
+     Starting wfc are 1289 atomic wfcs
+
+     -------------------------------------------------------------------------
+               Reading core wavefunction file for the absorbing atom
+     -------------------------------------------------------------------------
+
+     /home/549/hxw549/Short/graphene/C.wfc successfully read
+
+     -------------------------------------------------------------------------
+                              Attributing the PAW radii 
+                     for the absorbing atom [units: Bohr radius]
+     -------------------------------------------------------------------------
+
+        PAW proj 1: r_paw(l= 0)= 2.25  (1.5*r_cut)
+        PAW proj 2: r_paw(l= 0)= 2.25  (1.5*r_cut)
+ 
+        NB: The calculation will not necessary use all these r_paw values.
+            - For a edge in the electric-dipole approximation,
+              only the r_paw(l=1) values are used.
+            - For a K edge in the electric-quadrupole approximation,
+              only the r_paw(l=2) values are used.
+
+            - For a L2 or L3 edge in the electric-quadrupole approximation,
+
+              all projectors (s, p and d) are used.
+
+
+     init_gipaw_1: projectors nearly linearly dependent:
+     ntyp =  2, l/n1/n2 =  1 2 1  0.99871871
+
+
+     -------------------------------------------------------------------------
+                          Starting XANES calculation
+                     in the electric dipole approximation
+     -------------------------------------------------------------------------
+
+     Method of calculation based on the Lanczos recursion algorithm
+     --------------------------------------------------------------
+        - STEP 1: Construction of a kpoint-dependent Lanczos basis,
+          in which the Hamiltonian is tridiagonal (each 'iter' 
+          corresponds to the calculation of one more Lanczos vector)
+        - STEP 2: Calculation of the cross-section as a continued fraction
+          averaged over the k-points.
+
+     ... Begin STEP 1 ...
+
+        Radial transition matrix element(s) used in the calculation of the
+        initial vector of the Lanczos basis (|tilde{phi}_abs> normalized)
+        | For PAW proj. (l=1) #1: radial matrix element =   0.319375580
+        | For PAW proj. (l=1) #2: radial matrix element =   0.415486675
+ 
+        |-------------------------------------------------------------
+        ! k-point #     1:  ( 0.0000,  0.0000,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89249636E+00
+        |   Estimated error at iter     50:   1.06880653
+        |   Estimated error at iter    100:   0.11703760
+        |   Estimated error at iter    150:   0.07988614
+        |   Estimated error at iter    200:   0.12732214
+        |   Estimated error at iter    250:   0.16130853
+        |   Estimated error at iter    300:   0.11458141
+        |   Estimated error at iter    350:   0.06768212
+        |   Estimated error at iter    400:   0.04816077
+        |   Estimated error at iter    450:   0.02817488
+        |   Estimated error at iter    500:   0.03698211
+        |   Estimated error at iter    550:   0.03924140
+        |   Estimated error at iter    600:   0.02330675
+        |   Estimated error at iter    650:   0.01828336
+        |   Estimated error at iter    700:   0.01386502
+        |   Estimated error at iter    750:   0.01509601
+        |   Estimated error at iter    800:   0.01312615
+        |   Estimated error at iter    850:   0.01051770
+        |   Estimated error at iter    900:   0.01138746
+        |   Estimated error at iter    950:   0.01223619
+        |   Estimated error at iter   1000:   0.01109043
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #     2:  ( 0.0000,  0.0541,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89247158E+00
+        |   Estimated error at iter     50:   1.06880485
+        |   Estimated error at iter    100:   0.11773406
+        |   Estimated error at iter    150:   0.08078007
+        |   Estimated error at iter    200:   0.08278962
+        |   Estimated error at iter    250:   0.10965932
+        |   Estimated error at iter    300:   0.06673309
+        |   Estimated error at iter    350:   0.04297293
+        |   Estimated error at iter    400:   0.03818398
+        |   Estimated error at iter    450:   0.03888206
+        |   Estimated error at iter    500:   0.04528224
+        |   Estimated error at iter    550:   0.03428209
+        |   Estimated error at iter    600:   0.01769760
+        |   Estimated error at iter    650:   0.01495368
+        |   Estimated error at iter    700:   0.01268090
+        |   Estimated error at iter    750:   0.01600240
+        |   Estimated error at iter    800:   0.01494815
+        |   Estimated error at iter    850:   0.00926399
+        |   Estimated error at iter    900:   0.01269475
+        |   Estimated error at iter    950:   0.01171634
+        |   Estimated error at iter   1000:   0.00743884
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #     3:  ( 0.0000,  0.1083,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89242067E+00
+        |   Estimated error at iter     50:   1.06879503
+        |   Estimated error at iter    100:   0.12194448
+        |   Estimated error at iter    150:   0.08545768
+        |   Estimated error at iter    200:   0.07186993
+        |   Estimated error at iter    250:   0.05610127
+        |   Estimated error at iter    300:   0.03915513
+        |   Estimated error at iter    350:   0.04233741
+        |   Estimated error at iter    400:   0.04514716
+        |   Estimated error at iter    450:   0.03789459
+        |   Estimated error at iter    500:   0.04663921
+        |   Estimated error at iter    550:   0.04447566
+        |   Estimated error at iter    600:   0.01902448
+        |   Estimated error at iter    650:   0.02529742
+        |   Estimated error at iter    700:   0.01374899
+        |   Estimated error at iter    750:   0.01941671
+        |   Estimated error at iter    800:   0.01506131
+        |   Estimated error at iter    850:   0.01130432
+        |   Estimated error at iter    900:   0.00636612
+        |   Estimated error at iter    950:   0.00673044
+        |   Estimated error at iter   1000:   0.00589929
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #     4:  ( 0.0000,  0.1624,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89242550E+00
+        |   Estimated error at iter     50:   1.06879510
+        |   Estimated error at iter    100:   0.12447515
+        |   Estimated error at iter    150:   0.09707877
+        |   Estimated error at iter    200:   0.10264732
+        |   Estimated error at iter    250:   0.09854845
+        |   Estimated error at iter    300:   0.09337350
+        |   Estimated error at iter    350:   0.05768951
+        |   Estimated error at iter    400:   0.04350507
+        |   Estimated error at iter    450:   0.03233123
+        |   Estimated error at iter    500:   0.03459534
+        |   Estimated error at iter    550:   0.03430119
+        |   Estimated error at iter    600:   0.01747671
+        |   Estimated error at iter    650:   0.01624159
+        |   Estimated error at iter    700:   0.02547183
+        |   Estimated error at iter    750:   0.02588977
+        |   Estimated error at iter    800:   0.01038896
+        |   Estimated error at iter    850:   0.00704804
+        |   Estimated error at iter    900:   0.01003631
+        |   Estimated error at iter    950:   0.01279905
+        |   Estimated error at iter   1000:   0.00881688
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #     5:  ( 0.0000,  0.2165,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89242670E+00
+        |   Estimated error at iter     50:   1.06879449
+        |   Estimated error at iter    100:   0.12623225
+        |   Estimated error at iter    150:   0.09952856
+        |   Estimated error at iter    200:   0.12148894
+        |   Estimated error at iter    250:   0.12693849
+        |   Estimated error at iter    300:   0.10837609
+        |   Estimated error at iter    350:   0.07639075
+        |   Estimated error at iter    400:   0.06058303
+        |   Estimated error at iter    450:   0.03413531
+        |   Estimated error at iter    500:   0.02241826
+        |   Estimated error at iter    550:   0.02332454
+        |   Estimated error at iter    600:   0.02449649
+        |   Estimated error at iter    650:   0.02844808
+        |   Estimated error at iter    700:   0.02019631
+        |   Estimated error at iter    750:   0.01988270
+        |   Estimated error at iter    800:   0.01322380
+        |   Estimated error at iter    850:   0.01250795
+        |   Estimated error at iter    900:   0.01316565
+        |   Estimated error at iter    950:   0.01206022
+        |   Estimated error at iter   1000:   0.00930030
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #     6:  ( 0.0000,  0.2706,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89242550E+00
+        |   Estimated error at iter     50:   1.06879510
+        |   Estimated error at iter    100:   0.12447515
+        |   Estimated error at iter    150:   0.09707877
+        |   Estimated error at iter    200:   0.10264732
+        |   Estimated error at iter    250:   0.09854845
+        |   Estimated error at iter    300:   0.09337350
+        |   Estimated error at iter    350:   0.05768950
+        |   Estimated error at iter    400:   0.04452026
+        |   Estimated error at iter    450:   0.03480633
+        |   Estimated error at iter    500:   0.03431269
+        |   Estimated error at iter    550:   0.03454841
+        |   Estimated error at iter    600:   0.01769052
+        |   Estimated error at iter    650:   0.01942256
+        |   Estimated error at iter    700:   0.02931024
+        |   Estimated error at iter    750:   0.02824417
+        |   Estimated error at iter    800:   0.01377789
+        |   Estimated error at iter    850:   0.00654795
+        |   Estimated error at iter    900:   0.01135509
+        |   Estimated error at iter    950:   0.01442789
+        |   Estimated error at iter   1000:   0.00783463
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #     7:  ( 0.0000,  0.3248,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89242067E+00
+        |   Estimated error at iter     50:   1.06879503
+        |   Estimated error at iter    100:   0.12194448
+        |   Estimated error at iter    150:   0.08545768
+        |   Estimated error at iter    200:   0.07186993
+        |   Estimated error at iter    250:   0.05610127
+        |   Estimated error at iter    300:   0.03915513
+        |   Estimated error at iter    350:   0.04233741
+        |   Estimated error at iter    400:   0.04580660
+        |   Estimated error at iter    450:   0.03932572
+        |   Estimated error at iter    500:   0.05059831
+        |   Estimated error at iter    550:   0.04394942
+        |   Estimated error at iter    600:   0.01713236
+        |   Estimated error at iter    650:   0.02545506
+        |   Estimated error at iter    700:   0.01364851
+        |   Estimated error at iter    750:   0.01807844
+        |   Estimated error at iter    800:   0.01441422
+        |   Estimated error at iter    850:   0.01432231
+        |   Estimated error at iter    900:   0.01002511
+        |   Estimated error at iter    950:   0.01025582
+        |   Estimated error at iter   1000:   0.01087111
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #     8:  ( 0.0000,  0.3789,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89247158E+00
+        |   Estimated error at iter     50:   1.06880485
+        |   Estimated error at iter    100:   0.11773406
+        |   Estimated error at iter    150:   0.08078007
+        |   Estimated error at iter    200:   0.08278962
+        |   Estimated error at iter    250:   0.10965932
+        |   Estimated error at iter    300:   0.06673309
+        |   Estimated error at iter    350:   0.04297293
+        |   Estimated error at iter    400:   0.03816989
+        |   Estimated error at iter    450:   0.03878213
+        |   Estimated error at iter    500:   0.04526363
+        |   Estimated error at iter    550:   0.03445597
+        |   Estimated error at iter    600:   0.01770779
+        |   Estimated error at iter    650:   0.01194727
+        |   Estimated error at iter    700:   0.01595715
+        |   Estimated error at iter    750:   0.01920672
+        |   Estimated error at iter    800:   0.01901899
+        |   Estimated error at iter    850:   0.00900838
+        |   Estimated error at iter    900:   0.00769268
+        |   Estimated error at iter    950:   0.00692162
+        |   Estimated error at iter   1000:   0.00501219
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #     9:  ( 0.1250,  0.0000,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89245295E+00
+        |   Estimated error at iter     50:   1.06890477
+        |   Estimated error at iter    100:   0.11974196
+        |   Estimated error at iter    150:   0.07812958
+        |   Estimated error at iter    200:   0.08899927
+        |   Estimated error at iter    250:   0.04424020
+        |   Estimated error at iter    300:   0.04038549
+        |   Estimated error at iter    350:   0.02275384
+        |   Estimated error at iter    400:   0.03838773
+        |   Estimated error at iter    450:   0.05722732
+        |   Estimated error at iter    500:   0.04913845
+        |   Estimated error at iter    550:   0.02901094
+        |   Estimated error at iter    600:   0.03298338
+        |   Estimated error at iter    650:   0.02053916
+        |   Estimated error at iter    700:   0.02093440
+        |   Estimated error at iter    750:   0.01615753
+        |   Estimated error at iter    800:   0.01191912
+        |   Estimated error at iter    850:   0.01242428
+        |   Estimated error at iter    900:   0.01257375
+        |   Estimated error at iter    950:   0.01014413
+        |   Estimated error at iter   1000:   0.01377278
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    10:  ( 0.1250,  0.0541,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89245297E+00
+        |   Estimated error at iter     50:   1.06890406
+        |   Estimated error at iter    100:   0.12017010
+        |   Estimated error at iter    150:   0.07754476
+        |   Estimated error at iter    200:   0.06577156
+        |   Estimated error at iter    250:   0.05302737
+        |   Estimated error at iter    300:   0.03791144
+        |   Estimated error at iter    350:   0.03642928
+        |   Estimated error at iter    400:   0.03635390
+        |   Estimated error at iter    450:   0.04771715
+        |   Estimated error at iter    500:   0.03676196
+        |   Estimated error at iter    550:   0.02806607
+        |   Estimated error at iter    600:   0.02123919
+        |   Estimated error at iter    650:   0.02285101
+        |   Estimated error at iter    700:   0.01698309
+        |   Estimated error at iter    750:   0.02139821
+        |   Estimated error at iter    800:   0.01232712
+        |   Estimated error at iter    850:   0.01300360
+        |   Estimated error at iter    900:   0.01596815
+        |   Estimated error at iter    950:   0.01039184
+        |   Estimated error at iter   1000:   0.00943875
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    11:  ( 0.1250,  0.1083,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89247434E+00
+        |   Estimated error at iter     50:   1.06890826
+        |   Estimated error at iter    100:   0.12052839
+        |   Estimated error at iter    150:   0.08458457
+        |   Estimated error at iter    200:   0.05629554
+        |   Estimated error at iter    250:   0.06890944
+        |   Estimated error at iter    300:   0.02453050
+        |   Estimated error at iter    350:   0.05479551
+        |   Estimated error at iter    400:   0.04974815
+        |   Estimated error at iter    450:   0.04286197
+        |   Estimated error at iter    500:   0.04041293
+        |   Estimated error at iter    550:   0.01704960
+        |   Estimated error at iter    600:   0.02714981
+        |   Estimated error at iter    650:   0.02205846
+        |   Estimated error at iter    700:   0.01017150
+        |   Estimated error at iter    750:   0.01211017
+        |   Estimated error at iter    800:   0.01449736
+        |   Estimated error at iter    850:   0.00752786
+        |   Estimated error at iter    900:   0.01172253
+        |   Estimated error at iter    950:   0.01222563
+        |   Estimated error at iter   1000:   0.01533635
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    12:  ( 0.1250,  0.1624,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89246698E+00
+        |   Estimated error at iter     50:   1.06890395
+        |   Estimated error at iter    100:   0.12439363
+        |   Estimated error at iter    150:   0.09917023
+        |   Estimated error at iter    200:   0.08638954
+        |   Estimated error at iter    250:   0.10165976
+        |   Estimated error at iter    300:   0.05445315
+        |   Estimated error at iter    350:   0.06185308
+        |   Estimated error at iter    400:   0.03657424
+        |   Estimated error at iter    450:   0.03983150
+        |   Estimated error at iter    500:   0.03559916
+        |   Estimated error at iter    550:   0.02479308
+        |   Estimated error at iter    600:   0.02242965
+        |   Estimated error at iter    650:   0.01648984
+        |   Estimated error at iter    700:   0.02617201
+        |   Estimated error at iter    750:   0.01267000
+        |   Estimated error at iter    800:   0.01506596
+        |   Estimated error at iter    850:   0.00762829
+        |   Estimated error at iter    900:   0.01161971
+        |   Estimated error at iter    950:   0.01101968
+        |   Estimated error at iter   1000:   0.00666218
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    13:  ( 0.1250,  0.2165,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89246700E+00
+        |   Estimated error at iter     50:   1.06889979
+        |   Estimated error at iter    100:   0.12552045
+        |   Estimated error at iter    150:   0.10493378
+        |   Estimated error at iter    200:   0.09860258
+        |   Estimated error at iter    250:   0.11611928
+        |   Estimated error at iter    300:   0.08216458
+        |   Estimated error at iter    350:   0.07838720
+        |   Estimated error at iter    400:   0.04726016
+        |   Estimated error at iter    450:   0.04047014
+        |   Estimated error at iter    500:   0.02636008
+        |   Estimated error at iter    550:   0.03913088
+        |   Estimated error at iter    600:   0.02026749
+        |   Estimated error at iter    650:   0.02196489
+        |   Estimated error at iter    700:   0.02711193
+        |   Estimated error at iter    750:   0.01749304
+        |   Estimated error at iter    800:   0.01792978
+        |   Estimated error at iter    850:   0.00738867
+        |   Estimated error at iter    900:   0.00720000
+        |   Estimated error at iter    950:   0.00560254
+        |   Estimated error at iter   1000:   0.01000228
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    14:  ( 0.1250,  0.2706,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89246697E+00
+        |   Estimated error at iter     50:   1.06890392
+        |   Estimated error at iter    100:   0.12538888
+        |   Estimated error at iter    150:   0.10309440
+        |   Estimated error at iter    200:   0.08255167
+        |   Estimated error at iter    250:   0.10449615
+        |   Estimated error at iter    300:   0.05968058
+        |   Estimated error at iter    350:   0.05507595
+        |   Estimated error at iter    400:   0.04195745
+        |   Estimated error at iter    450:   0.04420508
+        |   Estimated error at iter    500:   0.03403631
+        |   Estimated error at iter    550:   0.03188272
+        |   Estimated error at iter    600:   0.02009466
+        |   Estimated error at iter    650:   0.00944464
+        |   Estimated error at iter    700:   0.01681254
+        |   Estimated error at iter    750:   0.02238149
+        |   Estimated error at iter    800:   0.01764722
+        |   Estimated error at iter    850:   0.01188194
+        |   Estimated error at iter    900:   0.01131515
+        |   Estimated error at iter    950:   0.01276232
+        |   Estimated error at iter   1000:   0.00990618
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    15:  ( 0.1250,  0.3248,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89247434E+00
+        |   Estimated error at iter     50:   1.06890832
+        |   Estimated error at iter    100:   0.12197688
+        |   Estimated error at iter    150:   0.08946906
+        |   Estimated error at iter    200:   0.05773078
+        |   Estimated error at iter    250:   0.07439164
+        |   Estimated error at iter    300:   0.04206398
+        |   Estimated error at iter    350:   0.05365001
+        |   Estimated error at iter    400:   0.04641396
+        |   Estimated error at iter    450:   0.04245171
+        |   Estimated error at iter    500:   0.03344166
+        |   Estimated error at iter    550:   0.02575154
+        |   Estimated error at iter    600:   0.02325086
+        |   Estimated error at iter    650:   0.03048326
+        |   Estimated error at iter    700:   0.02347484
+        |   Estimated error at iter    750:   0.02347727
+        |   Estimated error at iter    800:   0.01648109
+        |   Estimated error at iter    850:   0.01277488
+        |   Estimated error at iter    900:   0.00900516
+        |   Estimated error at iter    950:   0.00971917
+        |   Estimated error at iter   1000:   0.01008329
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    16:  ( 0.1250,  0.3789,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89245297E+00
+        |   Estimated error at iter     50:   1.06890407
+        |   Estimated error at iter    100:   0.12116789
+        |   Estimated error at iter    150:   0.08135831
+        |   Estimated error at iter    200:   0.07279970
+        |   Estimated error at iter    250:   0.04923852
+        |   Estimated error at iter    300:   0.04988102
+        |   Estimated error at iter    350:   0.03855504
+        |   Estimated error at iter    400:   0.03846929
+        |   Estimated error at iter    450:   0.04170723
+        |   Estimated error at iter    500:   0.03942878
+        |   Estimated error at iter    550:   0.02844417
+        |   Estimated error at iter    600:   0.02798011
+        |   Estimated error at iter    650:   0.03188801
+        |   Estimated error at iter    700:   0.02049166
+        |   Estimated error at iter    750:   0.01497008
+        |   Estimated error at iter    800:   0.01093634
+        |   Estimated error at iter    850:   0.01216212
+        |   Estimated error at iter    900:   0.01357637
+        |   Estimated error at iter    950:   0.01173658
+        |   Estimated error at iter   1000:   0.01107047
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    17:  ( 0.2500,  0.0000,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89245665E+00
+        |   Estimated error at iter     50:   1.06915011
+        |   Estimated error at iter    100:   0.14877240
+        |   Estimated error at iter    150:   0.09529417
+        |   Estimated error at iter    200:   0.12332821
+        |   Estimated error at iter    250:   0.11065087
+        |   Estimated error at iter    300:   0.04687951
+        |   Estimated error at iter    350:   0.07078182
+        |   Estimated error at iter    400:   0.04632087
+        |   Estimated error at iter    450:   0.04938153
+        |   Estimated error at iter    500:   0.03775744
+        |   Estimated error at iter    550:   0.02521276
+        |   Estimated error at iter    600:   0.02833420
+        |   Estimated error at iter    650:   0.01639949
+        |   Estimated error at iter    700:   0.01870152
+        |   Estimated error at iter    750:   0.01775520
+        |   Estimated error at iter    800:   0.01638361
+        |   Estimated error at iter    850:   0.01115673
+        |   Estimated error at iter    900:   0.01281345
+        |   Estimated error at iter    950:   0.00390150
+        |   Estimated error at iter   1000:   0.01154712
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    18:  ( 0.2500,  0.0541,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89245983E+00
+        |   Estimated error at iter     50:   1.06915047
+        |   Estimated error at iter    100:   0.14936953
+        |   Estimated error at iter    150:   0.10111665
+        |   Estimated error at iter    200:   0.11446985
+        |   Estimated error at iter    250:   0.09884622
+        |   Estimated error at iter    300:   0.04122474
+        |   Estimated error at iter    350:   0.04777741
+        |   Estimated error at iter    400:   0.02172145
+        |   Estimated error at iter    450:   0.03033378
+        |   Estimated error at iter    500:   0.03541666
+        |   Estimated error at iter    550:   0.01386314
+        |   Estimated error at iter    600:   0.02275265
+        |   Estimated error at iter    650:   0.01322766
+        |   Estimated error at iter    700:   0.01364372
+        |   Estimated error at iter    750:   0.02370559
+        |   Estimated error at iter    800:   0.02289199
+        |   Estimated error at iter    850:   0.00587298
+        |   Estimated error at iter    900:   0.01298513
+        |   Estimated error at iter    950:   0.01431910
+        |   Estimated error at iter   1000:   0.01285551
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    19:  ( 0.2500,  0.1083,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89246794E+00
+        |   Estimated error at iter     50:   1.06915113
+        |   Estimated error at iter    100:   0.14988583
+        |   Estimated error at iter    150:   0.12803914
+        |   Estimated error at iter    200:   0.10421137
+        |   Estimated error at iter    250:   0.08622117
+        |   Estimated error at iter    300:   0.06893505
+        |   Estimated error at iter    350:   0.06111756
+        |   Estimated error at iter    400:   0.03125029
+        |   Estimated error at iter    450:   0.01636046
+        |   Estimated error at iter    500:   0.02667297
+        |   Estimated error at iter    550:   0.02468078
+        |   Estimated error at iter    600:   0.01482405
+        |   Estimated error at iter    650:   0.02412408
+        |   Estimated error at iter    700:   0.02309956
+        |   Estimated error at iter    750:   0.01338770
+        |   Estimated error at iter    800:   0.01708475
+        |   Estimated error at iter    850:   0.01310345
+        |   Estimated error at iter    900:   0.01137664
+        |   Estimated error at iter    950:   0.01196561
+        |   Estimated error at iter   1000:   0.00754662
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    20:  ( 0.2500,  0.1624,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89248584E+00
+        |   Estimated error at iter     50:   1.06915237
+        |   Estimated error at iter    100:   0.15098833
+        |   Estimated error at iter    150:   0.15850076
+        |   Estimated error at iter    200:   0.10568274
+        |   Estimated error at iter    250:   0.10237139
+        |   Estimated error at iter    300:   0.08369037
+        |   Estimated error at iter    350:   0.05410116
+        |   Estimated error at iter    400:   0.03870486
+        |   Estimated error at iter    450:   0.03342552
+        |   Estimated error at iter    500:   0.03441317
+        |   Estimated error at iter    550:   0.03104381
+        |   Estimated error at iter    600:   0.01696011
+        |   Estimated error at iter    650:   0.01992448
+        |   Estimated error at iter    700:   0.01399760
+        |   Estimated error at iter    750:   0.01245883
+        |   Estimated error at iter    800:   0.01409125
+        |   Estimated error at iter    850:   0.00775731
+        |   Estimated error at iter    900:   0.01030503
+        |   Estimated error at iter    950:   0.01292586
+        |   Estimated error at iter   1000:   0.00933606
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    21:  ( 0.2500,  0.2165,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89249489E+00
+        |   Estimated error at iter     50:   1.06915528
+        |   Estimated error at iter    100:   0.15312146
+        |   Estimated error at iter    150:   0.17283970
+        |   Estimated error at iter    200:   0.10766038
+        |   Estimated error at iter    250:   0.11576685
+        |   Estimated error at iter    300:   0.08617712
+        |   Estimated error at iter    350:   0.04110862
+        |   Estimated error at iter    400:   0.04788917
+        |   Estimated error at iter    450:   0.05055462
+        |   Estimated error at iter    500:   0.03881803
+        |   Estimated error at iter    550:   0.03172301
+        |   Estimated error at iter    600:   0.01864636
+        |   Estimated error at iter    650:   0.02213555
+        |   Estimated error at iter    700:   0.02200201
+        |   Estimated error at iter    750:   0.01242331
+        |   Estimated error at iter    800:   0.01712292
+        |   Estimated error at iter    850:   0.01081708
+        |   Estimated error at iter    900:   0.00875684
+        |   Estimated error at iter    950:   0.01117771
+        |   Estimated error at iter   1000:   0.00867369
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    22:  ( 0.2500,  0.2706,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89248584E+00
+        |   Estimated error at iter     50:   1.06915243
+        |   Estimated error at iter    100:   0.15236793
+        |   Estimated error at iter    150:   0.15774517
+        |   Estimated error at iter    200:   0.10383945
+        |   Estimated error at iter    250:   0.10947013
+        |   Estimated error at iter    300:   0.07757481
+        |   Estimated error at iter    350:   0.06345779
+        |   Estimated error at iter    400:   0.03206568
+        |   Estimated error at iter    450:   0.03164988
+        |   Estimated error at iter    500:   0.03752357
+        |   Estimated error at iter    550:   0.03394556
+        |   Estimated error at iter    600:   0.01589478
+        |   Estimated error at iter    650:   0.02016390
+        |   Estimated error at iter    700:   0.01625999
+        |   Estimated error at iter    750:   0.01358628
+        |   Estimated error at iter    800:   0.01663403
+        |   Estimated error at iter    850:   0.00956176
+        |   Estimated error at iter    900:   0.00751647
+        |   Estimated error at iter    950:   0.01455566
+        |   Estimated error at iter   1000:   0.01066110
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    23:  ( 0.2500,  0.3248,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89246794E+00
+        |   Estimated error at iter     50:   1.06915130
+        |   Estimated error at iter    100:   0.15178159
+        |   Estimated error at iter    150:   0.12785114
+        |   Estimated error at iter    200:   0.10569545
+        |   Estimated error at iter    250:   0.09136145
+        |   Estimated error at iter    300:   0.06277134
+        |   Estimated error at iter    350:   0.07278987
+        |   Estimated error at iter    400:   0.03245111
+        |   Estimated error at iter    450:   0.02816351
+        |   Estimated error at iter    500:   0.03353942
+        |   Estimated error at iter    550:   0.02284930
+        |   Estimated error at iter    600:   0.01269549
+        |   Estimated error at iter    650:   0.02480927
+        |   Estimated error at iter    700:   0.02266497
+        |   Estimated error at iter    750:   0.01401718
+        |   Estimated error at iter    800:   0.01616443
+        |   Estimated error at iter    850:   0.01389230
+        |   Estimated error at iter    900:   0.00937831
+        |   Estimated error at iter    950:   0.01037379
+        |   Estimated error at iter   1000:   0.00781459
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    24:  ( 0.2500,  0.3789,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89245984E+00
+        |   Estimated error at iter     50:   1.06915046
+        |   Estimated error at iter    100:   0.15066338
+        |   Estimated error at iter    150:   0.10455885
+        |   Estimated error at iter    200:   0.11757126
+        |   Estimated error at iter    250:   0.10109166
+        |   Estimated error at iter    300:   0.04332771
+        |   Estimated error at iter    350:   0.05464785
+        |   Estimated error at iter    400:   0.02608073
+        |   Estimated error at iter    450:   0.03399108
+        |   Estimated error at iter    500:   0.03596875
+        |   Estimated error at iter    550:   0.01912577
+        |   Estimated error at iter    600:   0.02138285
+        |   Estimated error at iter    650:   0.01669812
+        |   Estimated error at iter    700:   0.01300610
+        |   Estimated error at iter    750:   0.01384864
+        |   Estimated error at iter    800:   0.01911880
+        |   Estimated error at iter    850:   0.00876854
+        |   Estimated error at iter    900:   0.01590420
+        |   Estimated error at iter    950:   0.01232099
+        |   Estimated error at iter   1000:   0.01392147
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    25:  ( 0.3750,  0.0000,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89248247E+00
+        |   Estimated error at iter     50:   1.06940341
+        |   Estimated error at iter    100:   0.20587639
+        |   Estimated error at iter    150:   0.12625725
+        |   Estimated error at iter    200:   0.16284528
+        |   Estimated error at iter    250:   0.08674537
+        |   Estimated error at iter    300:   0.04069939
+        |   Estimated error at iter    350:   0.03094215
+        |   Estimated error at iter    400:   0.05010517
+        |   Estimated error at iter    450:   0.03219644
+        |   Estimated error at iter    500:   0.03409245
+        |   Estimated error at iter    550:   0.03082612
+        |   Estimated error at iter    600:   0.02224521
+        |   Estimated error at iter    650:   0.01938223
+        |   Estimated error at iter    700:   0.01374040
+        |   Estimated error at iter    750:   0.01365169
+        |   Estimated error at iter    800:   0.01004739
+        |   Estimated error at iter    850:   0.01476902
+        |   Estimated error at iter    900:   0.01405116
+        |   Estimated error at iter    950:   0.01324482
+        |   Estimated error at iter   1000:   0.01228894
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    26:  ( 0.3750,  0.0541,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89247380E+00
+        |   Estimated error at iter     50:   1.06940010
+        |   Estimated error at iter    100:   0.20628045
+        |   Estimated error at iter    150:   0.13411622
+        |   Estimated error at iter    200:   0.14245849
+        |   Estimated error at iter    250:   0.07218537
+        |   Estimated error at iter    300:   0.04964694
+        |   Estimated error at iter    350:   0.02501204
+        |   Estimated error at iter    400:   0.02895907
+        |   Estimated error at iter    450:   0.02968964
+        |   Estimated error at iter    500:   0.01590982
+        |   Estimated error at iter    550:   0.02612155
+        |   Estimated error at iter    600:   0.01518365
+        |   Estimated error at iter    650:   0.01101764
+        |   Estimated error at iter    700:   0.01746537
+        |   Estimated error at iter    750:   0.01617965
+        |   Estimated error at iter    800:   0.00964082
+        |   Estimated error at iter    850:   0.01187138
+        |   Estimated error at iter    900:   0.01283522
+        |   Estimated error at iter    950:   0.01383244
+        |   Estimated error at iter   1000:   0.01320271
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    27:  ( 0.3750,  0.1083,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89248217E+00
+        |   Estimated error at iter     50:   1.06940079
+        |   Estimated error at iter    100:   0.20757710
+        |   Estimated error at iter    150:   0.16144697
+        |   Estimated error at iter    200:   0.11694647
+        |   Estimated error at iter    250:   0.06054613
+        |   Estimated error at iter    300:   0.05121619
+        |   Estimated error at iter    350:   0.02351902
+        |   Estimated error at iter    400:   0.02686621
+        |   Estimated error at iter    450:   0.04284913
+        |   Estimated error at iter    500:   0.02263632
+        |   Estimated error at iter    550:   0.01897619
+        |   Estimated error at iter    600:   0.01429258
+        |   Estimated error at iter    650:   0.01622727
+        |   Estimated error at iter    700:   0.01744148
+        |   Estimated error at iter    750:   0.01954585
+        |   Estimated error at iter    800:   0.01903612
+        |   Estimated error at iter    850:   0.01171403
+        |   Estimated error at iter    900:   0.01284423
+        |   Estimated error at iter    950:   0.01229546
+        |   Estimated error at iter   1000:   0.01046086
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    28:  ( 0.3750,  0.1624,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89247823E+00
+        |   Estimated error at iter     50:   1.06939899
+        |   Estimated error at iter    100:   0.20859175
+        |   Estimated error at iter    150:   0.20068068
+        |   Estimated error at iter    200:   0.13015723
+        |   Estimated error at iter    250:   0.06358703
+        |   Estimated error at iter    300:   0.05024103
+        |   Estimated error at iter    350:   0.03629046
+        |   Estimated error at iter    400:   0.02709549
+        |   Estimated error at iter    450:   0.04693286
+        |   Estimated error at iter    500:   0.02410060
+        |   Estimated error at iter    550:   0.02538419
+        |   Estimated error at iter    600:   0.02556096
+        |   Estimated error at iter    650:   0.01933681
+        |   Estimated error at iter    700:   0.01709867
+        |   Estimated error at iter    750:   0.01813510
+        |   Estimated error at iter    800:   0.01611801
+        |   Estimated error at iter    850:   0.01725801
+        |   Estimated error at iter    900:   0.00956768
+        |   Estimated error at iter    950:   0.00924156
+        |   Estimated error at iter   1000:   0.01026839
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    29:  ( 0.3750,  0.2165,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89247083E+00
+        |   Estimated error at iter     50:   1.06939858
+        |   Estimated error at iter    100:   0.20817573
+        |   Estimated error at iter    150:   0.21803719
+        |   Estimated error at iter    200:   0.13693070
+        |   Estimated error at iter    250:   0.06470537
+        |   Estimated error at iter    300:   0.05528087
+        |   Estimated error at iter    350:   0.05435325
+        |   Estimated error at iter    400:   0.02864653
+        |   Estimated error at iter    450:   0.06228172
+        |   Estimated error at iter    500:   0.03282479
+        |   Estimated error at iter    550:   0.02561959
+        |   Estimated error at iter    600:   0.02660101
+        |   Estimated error at iter    650:   0.01188178
+        |   Estimated error at iter    700:   0.01676408
+        |   Estimated error at iter    750:   0.01075426
+        |   Estimated error at iter    800:   0.01589646
+        |   Estimated error at iter    850:   0.01782364
+        |   Estimated error at iter    900:   0.01139885
+        |   Estimated error at iter    950:   0.01298973
+        |   Estimated error at iter   1000:   0.00951240
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    30:  ( 0.3750,  0.2706,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89247822E+00
+        |   Estimated error at iter     50:   1.06939909
+        |   Estimated error at iter    100:   0.20932233
+        |   Estimated error at iter    150:   0.20026681
+        |   Estimated error at iter    200:   0.12538632
+        |   Estimated error at iter    250:   0.07175422
+        |   Estimated error at iter    300:   0.04831903
+        |   Estimated error at iter    350:   0.03631045
+        |   Estimated error at iter    400:   0.02701891
+        |   Estimated error at iter    450:   0.03688069
+        |   Estimated error at iter    500:   0.02438260
+        |   Estimated error at iter    550:   0.01588395
+        |   Estimated error at iter    600:   0.02272685
+        |   Estimated error at iter    650:   0.02020476
+        |   Estimated error at iter    700:   0.01727470
+        |   Estimated error at iter    750:   0.01371513
+        |   Estimated error at iter    800:   0.01085282
+        |   Estimated error at iter    850:   0.01178230
+        |   Estimated error at iter    900:   0.00994772
+        |   Estimated error at iter    950:   0.00975823
+        |   Estimated error at iter   1000:   0.00943221
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    31:  ( 0.3750,  0.3248,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89248216E+00
+        |   Estimated error at iter     50:   1.06940100
+        |   Estimated error at iter    100:   0.20862018
+        |   Estimated error at iter    150:   0.16158014
+        |   Estimated error at iter    200:   0.11806329
+        |   Estimated error at iter    250:   0.07378900
+        |   Estimated error at iter    300:   0.04536625
+        |   Estimated error at iter    350:   0.03128630
+        |   Estimated error at iter    400:   0.02742463
+        |   Estimated error at iter    450:   0.04336902
+        |   Estimated error at iter    500:   0.02755007
+        |   Estimated error at iter    550:   0.01271472
+        |   Estimated error at iter    600:   0.01146718
+        |   Estimated error at iter    650:   0.01217134
+        |   Estimated error at iter    700:   0.01687579
+        |   Estimated error at iter    750:   0.01810360
+        |   Estimated error at iter    800:   0.01735016
+        |   Estimated error at iter    850:   0.01040703
+        |   Estimated error at iter    900:   0.00791143
+        |   Estimated error at iter    950:   0.01056012
+        |   Estimated error at iter   1000:   0.00873420
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    32:  ( 0.3750,  0.3789,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89247379E+00
+        |   Estimated error at iter     50:   1.06940037
+        |   Estimated error at iter    100:   0.20694375
+        |   Estimated error at iter    150:   0.13345259
+        |   Estimated error at iter    200:   0.14819791
+        |   Estimated error at iter    250:   0.08499551
+        |   Estimated error at iter    300:   0.04012251
+        |   Estimated error at iter    350:   0.02713374
+        |   Estimated error at iter    400:   0.02999099
+        |   Estimated error at iter    450:   0.03479587
+        |   Estimated error at iter    500:   0.02216370
+        |   Estimated error at iter    550:   0.01583654
+        |   Estimated error at iter    600:   0.01972257
+        |   Estimated error at iter    650:   0.00747312
+        |   Estimated error at iter    700:   0.01523609
+        |   Estimated error at iter    750:   0.01959642
+        |   Estimated error at iter    800:   0.01372389
+        |   Estimated error at iter    850:   0.01387192
+        |   Estimated error at iter    900:   0.01026230
+        |   Estimated error at iter    950:   0.01011540
+        |   Estimated error at iter   1000:   0.00633133
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    33:  ( 0.5000,  0.0000,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89250342E+00
+        |   Estimated error at iter     50:   1.06950712
+        |   Estimated error at iter    100:   0.23855475
+        |   Estimated error at iter    150:   0.15167082
+        |   Estimated error at iter    200:   0.18488344
+        |   Estimated error at iter    250:   0.09174953
+        |   Estimated error at iter    300:   0.08598886
+        |   Estimated error at iter    350:   0.04292771
+        |   Estimated error at iter    400:   0.03753644
+        |   Estimated error at iter    450:   0.03200495
+        |   Estimated error at iter    500:   0.03300668
+        |   Estimated error at iter    550:   0.02237995
+        |   Estimated error at iter    600:   0.01896511
+        |   Estimated error at iter    650:   0.02379364
+        |   Estimated error at iter    700:   0.01844229
+        |   Estimated error at iter    750:   0.01236140
+        |   Estimated error at iter    800:   0.01314912
+        |   Estimated error at iter    850:   0.01306062
+        |   Estimated error at iter    900:   0.01246638
+        |   Estimated error at iter    950:   0.00813074
+        |   Estimated error at iter   1000:   0.01128001
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    34:  ( 0.5000,  0.0541,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89248408E+00
+        |   Estimated error at iter     50:   1.06950141
+        |   Estimated error at iter    100:   0.23860872
+        |   Estimated error at iter    150:   0.15436783
+        |   Estimated error at iter    200:   0.15393224
+        |   Estimated error at iter    250:   0.07255428
+        |   Estimated error at iter    300:   0.07308027
+        |   Estimated error at iter    350:   0.03612662
+        |   Estimated error at iter    400:   0.03695970
+        |   Estimated error at iter    450:   0.02464504
+        |   Estimated error at iter    500:   0.02680248
+        |   Estimated error at iter    550:   0.02551563
+        |   Estimated error at iter    600:   0.02334159
+        |   Estimated error at iter    650:   0.01253027
+        |   Estimated error at iter    700:   0.01327963
+        |   Estimated error at iter    750:   0.01538267
+        |   Estimated error at iter    800:   0.01562860
+        |   Estimated error at iter    850:   0.01490732
+        |   Estimated error at iter    900:   0.01489942
+        |   Estimated error at iter    950:   0.00843023
+        |   Estimated error at iter   1000:   0.00686082
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    35:  ( 0.5000,  0.1083,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89247426E+00
+        |   Estimated error at iter     50:   1.06950344
+        |   Estimated error at iter    100:   0.23853056
+        |   Estimated error at iter    150:   0.17472275
+        |   Estimated error at iter    200:   0.09775846
+        |   Estimated error at iter    250:   0.07369476
+        |   Estimated error at iter    300:   0.05623094
+        |   Estimated error at iter    350:   0.06143619
+        |   Estimated error at iter    400:   0.05435300
+        |   Estimated error at iter    450:   0.04251965
+        |   Estimated error at iter    500:   0.02257943
+        |   Estimated error at iter    550:   0.02503959
+        |   Estimated error at iter    600:   0.02116362
+        |   Estimated error at iter    650:   0.01070629
+        |   Estimated error at iter    700:   0.01288120
+        |   Estimated error at iter    750:   0.01294407
+        |   Estimated error at iter    800:   0.01534528
+        |   Estimated error at iter    850:   0.01279780
+        |   Estimated error at iter    900:   0.01071080
+        |   Estimated error at iter    950:   0.00764152
+        |   Estimated error at iter   1000:   0.00827548
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    36:  ( 0.5000,  0.1624,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89247113E+00
+        |   Estimated error at iter     50:   1.06950313
+        |   Estimated error at iter    100:   0.23841317
+        |   Estimated error at iter    150:   0.21181218
+        |   Estimated error at iter    200:   0.12438508
+        |   Estimated error at iter    250:   0.11735651
+        |   Estimated error at iter    300:   0.04311045
+        |   Estimated error at iter    350:   0.04495581
+        |   Estimated error at iter    400:   0.04121883
+        |   Estimated error at iter    450:   0.03048468
+        |   Estimated error at iter    500:   0.02421478
+        |   Estimated error at iter    550:   0.02882422
+        |   Estimated error at iter    600:   0.01931183
+        |   Estimated error at iter    650:   0.01794853
+        |   Estimated error at iter    700:   0.01825993
+        |   Estimated error at iter    750:   0.01312113
+        |   Estimated error at iter    800:   0.01429762
+        |   Estimated error at iter    850:   0.01179573
+        |   Estimated error at iter    900:   0.01328952
+        |   Estimated error at iter    950:   0.00833347
+        |   Estimated error at iter   1000:   0.00747092
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    37:  ( 0.5000,  0.2165,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89248396E+00
+        |   Estimated error at iter     50:   1.06950173
+        |   Estimated error at iter    100:   0.23939361
+        |   Estimated error at iter    150:   0.23162751
+        |   Estimated error at iter    200:   0.15154664
+        |   Estimated error at iter    250:   0.13739552
+        |   Estimated error at iter    300:   0.05750510
+        |   Estimated error at iter    350:   0.04320733
+        |   Estimated error at iter    400:   0.03556113
+        |   Estimated error at iter    450:   0.03022505
+        |   Estimated error at iter    500:   0.03688606
+        |   Estimated error at iter    550:   0.03556503
+        |   Estimated error at iter    600:   0.02343120
+        |   Estimated error at iter    650:   0.01518161
+        |   Estimated error at iter    700:   0.02331847
+        |   Estimated error at iter    750:   0.01529060
+        |   Estimated error at iter    800:   0.01009750
+        |   Estimated error at iter    850:   0.01494339
+        |   Estimated error at iter    900:   0.01062944
+        |   Estimated error at iter    950:   0.00885327
+        |   Estimated error at iter   1000:   0.01053835
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    38:  ( 0.5000,  0.2706,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89247113E+00
+        |   Estimated error at iter     50:   1.06950313
+        |   Estimated error at iter    100:   0.23841317
+        |   Estimated error at iter    150:   0.21181218
+        |   Estimated error at iter    200:   0.12438508
+        |   Estimated error at iter    250:   0.11735651
+        |   Estimated error at iter    300:   0.04311045
+        |   Estimated error at iter    350:   0.04495581
+        |   Estimated error at iter    400:   0.04121752
+        |   Estimated error at iter    450:   0.03043373
+        |   Estimated error at iter    500:   0.02439543
+        |   Estimated error at iter    550:   0.02794135
+        |   Estimated error at iter    600:   0.01931546
+        |   Estimated error at iter    650:   0.01795062
+        |   Estimated error at iter    700:   0.01826061
+        |   Estimated error at iter    750:   0.00980889
+        |   Estimated error at iter    800:   0.01194801
+        |   Estimated error at iter    850:   0.01173653
+        |   Estimated error at iter    900:   0.01275647
+        |   Estimated error at iter    950:   0.00748565
+        |   Estimated error at iter   1000:   0.00893012
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    39:  ( 0.5000,  0.3248,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89247426E+00
+        |   Estimated error at iter     50:   1.06950344
+        |   Estimated error at iter    100:   0.23853056
+        |   Estimated error at iter    150:   0.17472275
+        |   Estimated error at iter    200:   0.09775846
+        |   Estimated error at iter    250:   0.07369476
+        |   Estimated error at iter    300:   0.05623094
+        |   Estimated error at iter    350:   0.06143619
+        |   Estimated error at iter    400:   0.05435308
+        |   Estimated error at iter    450:   0.04213716
+        |   Estimated error at iter    500:   0.02211391
+        |   Estimated error at iter    550:   0.02550505
+        |   Estimated error at iter    600:   0.02157154
+        |   Estimated error at iter    650:   0.01064492
+        |   Estimated error at iter    700:   0.01233170
+        |   Estimated error at iter    750:   0.01167330
+        |   Estimated error at iter    800:   0.01347066
+        |   Estimated error at iter    850:   0.01051327
+        |   Estimated error at iter    900:   0.01079440
+        |   Estimated error at iter    950:   0.00897042
+        |   Estimated error at iter   1000:   0.00767194
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    40:  ( 0.5000,  0.3789,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89248408E+00
+        |   Estimated error at iter     50:   1.06950141
+        |   Estimated error at iter    100:   0.23860872
+        |   Estimated error at iter    150:   0.15436783
+        |   Estimated error at iter    200:   0.15393224
+        |   Estimated error at iter    250:   0.07255428
+        |   Estimated error at iter    300:   0.07308027
+        |   Estimated error at iter    350:   0.03612662
+        |   Estimated error at iter    400:   0.03696125
+        |   Estimated error at iter    450:   0.02514198
+        |   Estimated error at iter    500:   0.02682970
+        |   Estimated error at iter    550:   0.02737741
+        |   Estimated error at iter    600:   0.02191847
+        |   Estimated error at iter    650:   0.01246093
+        |   Estimated error at iter    700:   0.01282845
+        |   Estimated error at iter    750:   0.01487227
+        |   Estimated error at iter    800:   0.01535140
+        |   Estimated error at iter    850:   0.00842549
+        |   Estimated error at iter    900:   0.01062279
+        |   Estimated error at iter    950:   0.01007245
+        |   Estimated error at iter   1000:   0.00614437
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    41:  ( 0.6250,  0.0000,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89248247E+00
+        |   Estimated error at iter     50:   1.06940341
+        |   Estimated error at iter    100:   0.20587639
+        |   Estimated error at iter    150:   0.12625725
+        |   Estimated error at iter    200:   0.16284528
+        |   Estimated error at iter    250:   0.08674537
+        |   Estimated error at iter    300:   0.04069939
+        |   Estimated error at iter    350:   0.03094215
+        |   Estimated error at iter    400:   0.05011553
+        |   Estimated error at iter    450:   0.03338358
+        |   Estimated error at iter    500:   0.02749110
+        |   Estimated error at iter    550:   0.03082672
+        |   Estimated error at iter    600:   0.02222628
+        |   Estimated error at iter    650:   0.01941388
+        |   Estimated error at iter    700:   0.01407499
+        |   Estimated error at iter    750:   0.01482247
+        |   Estimated error at iter    800:   0.01012540
+        |   Estimated error at iter    850:   0.01168118
+        |   Estimated error at iter    900:   0.01451647
+        |   Estimated error at iter    950:   0.01303757
+        |   Estimated error at iter   1000:   0.01222732
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    42:  ( 0.6250,  0.0541,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89247379E+00
+        |   Estimated error at iter     50:   1.06940037
+        |   Estimated error at iter    100:   0.20694375
+        |   Estimated error at iter    150:   0.13345259
+        |   Estimated error at iter    200:   0.14819791
+        |   Estimated error at iter    250:   0.08499551
+        |   Estimated error at iter    300:   0.04012251
+        |   Estimated error at iter    350:   0.02713374
+        |   Estimated error at iter    400:   0.02999599
+        |   Estimated error at iter    450:   0.03616790
+        |   Estimated error at iter    500:   0.02356403
+        |   Estimated error at iter    550:   0.01525444
+        |   Estimated error at iter    600:   0.01953106
+        |   Estimated error at iter    650:   0.00748634
+        |   Estimated error at iter    700:   0.01587674
+        |   Estimated error at iter    750:   0.01923726
+        |   Estimated error at iter    800:   0.01410966
+        |   Estimated error at iter    850:   0.01383115
+        |   Estimated error at iter    900:   0.01065311
+        |   Estimated error at iter    950:   0.01025052
+        |   Estimated error at iter   1000:   0.00678462
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    43:  ( 0.6250,  0.1083,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89248216E+00
+        |   Estimated error at iter     50:   1.06940100
+        |   Estimated error at iter    100:   0.20862018
+        |   Estimated error at iter    150:   0.16158014
+        |   Estimated error at iter    200:   0.11806329
+        |   Estimated error at iter    250:   0.07378900
+        |   Estimated error at iter    300:   0.04536625
+        |   Estimated error at iter    350:   0.03128630
+        |   Estimated error at iter    400:   0.02743749
+        |   Estimated error at iter    450:   0.04308498
+        |   Estimated error at iter    500:   0.02644487
+        |   Estimated error at iter    550:   0.01558322
+        |   Estimated error at iter    600:   0.01227483
+        |   Estimated error at iter    650:   0.01216431
+        |   Estimated error at iter    700:   0.01680555
+        |   Estimated error at iter    750:   0.01995767
+        |   Estimated error at iter    800:   0.01763030
+        |   Estimated error at iter    850:   0.00672934
+        |   Estimated error at iter    900:   0.00865969
+        |   Estimated error at iter    950:   0.01343401
+        |   Estimated error at iter   1000:   0.01148551
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    44:  ( 0.6250,  0.1624,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89247822E+00
+        |   Estimated error at iter     50:   1.06939909
+        |   Estimated error at iter    100:   0.20932233
+        |   Estimated error at iter    150:   0.20026681
+        |   Estimated error at iter    200:   0.12538632
+        |   Estimated error at iter    250:   0.07175422
+        |   Estimated error at iter    300:   0.04831903
+        |   Estimated error at iter    350:   0.03631045
+        |   Estimated error at iter    400:   0.02702350
+        |   Estimated error at iter    450:   0.03689307
+        |   Estimated error at iter    500:   0.02427573
+        |   Estimated error at iter    550:   0.01491123
+        |   Estimated error at iter    600:   0.02034851
+        |   Estimated error at iter    650:   0.02018284
+        |   Estimated error at iter    700:   0.01740160
+        |   Estimated error at iter    750:   0.01763705
+        |   Estimated error at iter    800:   0.01327182
+        |   Estimated error at iter    850:   0.01055459
+        |   Estimated error at iter    900:   0.00905661
+        |   Estimated error at iter    950:   0.01163812
+        |   Estimated error at iter   1000:   0.01156992
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    45:  ( 0.6250,  0.2165,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89247083E+00
+        |   Estimated error at iter     50:   1.06939858
+        |   Estimated error at iter    100:   0.20817573
+        |   Estimated error at iter    150:   0.21803719
+        |   Estimated error at iter    200:   0.13693070
+        |   Estimated error at iter    250:   0.06470537
+        |   Estimated error at iter    300:   0.05528087
+        |   Estimated error at iter    350:   0.05435324
+        |   Estimated error at iter    400:   0.02865243
+        |   Estimated error at iter    450:   0.06217908
+        |   Estimated error at iter    500:   0.03260736
+        |   Estimated error at iter    550:   0.02583003
+        |   Estimated error at iter    600:   0.02657217
+        |   Estimated error at iter    650:   0.01192009
+        |   Estimated error at iter    700:   0.01753214
+        |   Estimated error at iter    750:   0.01063948
+        |   Estimated error at iter    800:   0.01030196
+        |   Estimated error at iter    850:   0.01312779
+        |   Estimated error at iter    900:   0.01125109
+        |   Estimated error at iter    950:   0.01250227
+        |   Estimated error at iter   1000:   0.00874726
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    46:  ( 0.6250,  0.2706,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89247823E+00
+        |   Estimated error at iter     50:   1.06939899
+        |   Estimated error at iter    100:   0.20859175
+        |   Estimated error at iter    150:   0.20068068
+        |   Estimated error at iter    200:   0.13015723
+        |   Estimated error at iter    250:   0.06358703
+        |   Estimated error at iter    300:   0.05024103
+        |   Estimated error at iter    350:   0.03629047
+        |   Estimated error at iter    400:   0.02720384
+        |   Estimated error at iter    450:   0.04915164
+        |   Estimated error at iter    500:   0.02547478
+        |   Estimated error at iter    550:   0.02237164
+        |   Estimated error at iter    600:   0.02202464
+        |   Estimated error at iter    650:   0.01935374
+        |   Estimated error at iter    700:   0.01503557
+        |   Estimated error at iter    750:   0.01834620
+        |   Estimated error at iter    800:   0.01525192
+        |   Estimated error at iter    850:   0.01516432
+        |   Estimated error at iter    900:   0.00897797
+        |   Estimated error at iter    950:   0.01021186
+        |   Estimated error at iter   1000:   0.00944918
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    47:  ( 0.6250,  0.3248,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89248217E+00
+        |   Estimated error at iter     50:   1.06940079
+        |   Estimated error at iter    100:   0.20757710
+        |   Estimated error at iter    150:   0.16144697
+        |   Estimated error at iter    200:   0.11694647
+        |   Estimated error at iter    250:   0.06054613
+        |   Estimated error at iter    300:   0.05121619
+        |   Estimated error at iter    350:   0.02351902
+        |   Estimated error at iter    400:   0.02687010
+        |   Estimated error at iter    450:   0.03319126
+        |   Estimated error at iter    500:   0.02822481
+        |   Estimated error at iter    550:   0.01897844
+        |   Estimated error at iter    600:   0.01429596
+        |   Estimated error at iter    650:   0.01623020
+        |   Estimated error at iter    700:   0.01740212
+        |   Estimated error at iter    750:   0.01577708
+        |   Estimated error at iter    800:   0.01947851
+        |   Estimated error at iter    850:   0.01416720
+        |   Estimated error at iter    900:   0.01083953
+        |   Estimated error at iter    950:   0.01429582
+        |   Estimated error at iter   1000:   0.01250397
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    48:  ( 0.6250,  0.3789,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89247380E+00
+        |   Estimated error at iter     50:   1.06940010
+        |   Estimated error at iter    100:   0.20628045
+        |   Estimated error at iter    150:   0.13411622
+        |   Estimated error at iter    200:   0.14245849
+        |   Estimated error at iter    250:   0.07218537
+        |   Estimated error at iter    300:   0.04964694
+        |   Estimated error at iter    350:   0.02501204
+        |   Estimated error at iter    400:   0.02895759
+        |   Estimated error at iter    450:   0.03272654
+        |   Estimated error at iter    500:   0.01847043
+        |   Estimated error at iter    550:   0.02594447
+        |   Estimated error at iter    600:   0.01562835
+        |   Estimated error at iter    650:   0.01117634
+        |   Estimated error at iter    700:   0.01979468
+        |   Estimated error at iter    750:   0.01553542
+        |   Estimated error at iter    800:   0.00848235
+        |   Estimated error at iter    850:   0.01121593
+        |   Estimated error at iter    900:   0.01408563
+        |   Estimated error at iter    950:   0.01612512
+        |   Estimated error at iter   1000:   0.01455953
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    49:  ( 0.7500,  0.0000,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89245665E+00
+        |   Estimated error at iter     50:   1.06915011
+        |   Estimated error at iter    100:   0.14877240
+        |   Estimated error at iter    150:   0.09529417
+        |   Estimated error at iter    200:   0.12332821
+        |   Estimated error at iter    250:   0.11065087
+        |   Estimated error at iter    300:   0.04687951
+        |   Estimated error at iter    350:   0.07078182
+        |   Estimated error at iter    400:   0.04630671
+        |   Estimated error at iter    450:   0.05129221
+        |   Estimated error at iter    500:   0.03990369
+        |   Estimated error at iter    550:   0.02362912
+        |   Estimated error at iter    600:   0.02529552
+        |   Estimated error at iter    650:   0.01787416
+        |   Estimated error at iter    700:   0.02214897
+        |   Estimated error at iter    750:   0.01823241
+        |   Estimated error at iter    800:   0.01652672
+        |   Estimated error at iter    850:   0.00957496
+        |   Estimated error at iter    900:   0.01481493
+        |   Estimated error at iter    950:   0.00397130
+        |   Estimated error at iter   1000:   0.00924509
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    50:  ( 0.7500,  0.0541,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89245984E+00
+        |   Estimated error at iter     50:   1.06915046
+        |   Estimated error at iter    100:   0.15066338
+        |   Estimated error at iter    150:   0.10455885
+        |   Estimated error at iter    200:   0.11757126
+        |   Estimated error at iter    250:   0.10109166
+        |   Estimated error at iter    300:   0.04332771
+        |   Estimated error at iter    350:   0.05464784
+        |   Estimated error at iter    400:   0.02607681
+        |   Estimated error at iter    450:   0.03441477
+        |   Estimated error at iter    500:   0.03625958
+        |   Estimated error at iter    550:   0.01922388
+        |   Estimated error at iter    600:   0.02167121
+        |   Estimated error at iter    650:   0.02225006
+        |   Estimated error at iter    700:   0.01379698
+        |   Estimated error at iter    750:   0.01458293
+        |   Estimated error at iter    800:   0.01817072
+        |   Estimated error at iter    850:   0.00835864
+        |   Estimated error at iter    900:   0.01776224
+        |   Estimated error at iter    950:   0.01537695
+        |   Estimated error at iter   1000:   0.01561034
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    51:  ( 0.7500,  0.1083,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89246794E+00
+        |   Estimated error at iter     50:   1.06915130
+        |   Estimated error at iter    100:   0.15178159
+        |   Estimated error at iter    150:   0.12785114
+        |   Estimated error at iter    200:   0.10569545
+        |   Estimated error at iter    250:   0.09136145
+        |   Estimated error at iter    300:   0.06277134
+        |   Estimated error at iter    350:   0.07278987
+        |   Estimated error at iter    400:   0.03246924
+        |   Estimated error at iter    450:   0.02906313
+        |   Estimated error at iter    500:   0.03106426
+        |   Estimated error at iter    550:   0.02310510
+        |   Estimated error at iter    600:   0.01301904
+        |   Estimated error at iter    650:   0.01734346
+        |   Estimated error at iter    700:   0.01829342
+        |   Estimated error at iter    750:   0.01252691
+        |   Estimated error at iter    800:   0.01318688
+        |   Estimated error at iter    850:   0.01307807
+        |   Estimated error at iter    900:   0.00873130
+        |   Estimated error at iter    950:   0.00746339
+        |   Estimated error at iter   1000:   0.00823990
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    52:  ( 0.7500,  0.1624,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89248584E+00
+        |   Estimated error at iter     50:   1.06915243
+        |   Estimated error at iter    100:   0.15236793
+        |   Estimated error at iter    150:   0.15774517
+        |   Estimated error at iter    200:   0.10383945
+        |   Estimated error at iter    250:   0.10947013
+        |   Estimated error at iter    300:   0.07757481
+        |   Estimated error at iter    350:   0.06345779
+        |   Estimated error at iter    400:   0.03204035
+        |   Estimated error at iter    450:   0.02951396
+        |   Estimated error at iter    500:   0.03480083
+        |   Estimated error at iter    550:   0.03412147
+        |   Estimated error at iter    600:   0.01542798
+        |   Estimated error at iter    650:   0.02030999
+        |   Estimated error at iter    700:   0.01638267
+        |   Estimated error at iter    750:   0.01423423
+        |   Estimated error at iter    800:   0.01710778
+        |   Estimated error at iter    850:   0.00866379
+        |   Estimated error at iter    900:   0.00595984
+        |   Estimated error at iter    950:   0.01231347
+        |   Estimated error at iter   1000:   0.00759219
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    53:  ( 0.7500,  0.2165,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89249489E+00
+        |   Estimated error at iter     50:   1.06915528
+        |   Estimated error at iter    100:   0.15312146
+        |   Estimated error at iter    150:   0.17283970
+        |   Estimated error at iter    200:   0.10766038
+        |   Estimated error at iter    250:   0.11576685
+        |   Estimated error at iter    300:   0.08617712
+        |   Estimated error at iter    350:   0.04110862
+        |   Estimated error at iter    400:   0.04787947
+        |   Estimated error at iter    450:   0.04873151
+        |   Estimated error at iter    500:   0.03801694
+        |   Estimated error at iter    550:   0.03194486
+        |   Estimated error at iter    600:   0.01912503
+        |   Estimated error at iter    650:   0.02036308
+        |   Estimated error at iter    700:   0.01825959
+        |   Estimated error at iter    750:   0.01392593
+        |   Estimated error at iter    800:   0.01859206
+        |   Estimated error at iter    850:   0.01146542
+        |   Estimated error at iter    900:   0.00858731
+        |   Estimated error at iter    950:   0.01126266
+        |   Estimated error at iter   1000:   0.00839645
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    54:  ( 0.7500,  0.2706,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89248584E+00
+        |   Estimated error at iter     50:   1.06915237
+        |   Estimated error at iter    100:   0.15098833
+        |   Estimated error at iter    150:   0.15850076
+        |   Estimated error at iter    200:   0.10568274
+        |   Estimated error at iter    250:   0.10237139
+        |   Estimated error at iter    300:   0.08369037
+        |   Estimated error at iter    350:   0.05410116
+        |   Estimated error at iter    400:   0.03869379
+        |   Estimated error at iter    450:   0.03433043
+        |   Estimated error at iter    500:   0.03558857
+        |   Estimated error at iter    550:   0.03085292
+        |   Estimated error at iter    600:   0.01688934
+        |   Estimated error at iter    650:   0.02032237
+        |   Estimated error at iter    700:   0.01538189
+        |   Estimated error at iter    750:   0.01378425
+        |   Estimated error at iter    800:   0.01441238
+        |   Estimated error at iter    850:   0.00805411
+        |   Estimated error at iter    900:   0.00921459
+        |   Estimated error at iter    950:   0.01006403
+        |   Estimated error at iter   1000:   0.00818401
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    55:  ( 0.7500,  0.3248,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89246794E+00
+        |   Estimated error at iter     50:   1.06915113
+        |   Estimated error at iter    100:   0.14988583
+        |   Estimated error at iter    150:   0.12803914
+        |   Estimated error at iter    200:   0.10421137
+        |   Estimated error at iter    250:   0.08622117
+        |   Estimated error at iter    300:   0.06893505
+        |   Estimated error at iter    350:   0.06111756
+        |   Estimated error at iter    400:   0.03130672
+        |   Estimated error at iter    450:   0.01823351
+        |   Estimated error at iter    500:   0.03165566
+        |   Estimated error at iter    550:   0.02451537
+        |   Estimated error at iter    600:   0.01394756
+        |   Estimated error at iter    650:   0.01660903
+        |   Estimated error at iter    700:   0.01611328
+        |   Estimated error at iter    750:   0.01263980
+        |   Estimated error at iter    800:   0.01702442
+        |   Estimated error at iter    850:   0.01270397
+        |   Estimated error at iter    900:   0.01096268
+        |   Estimated error at iter    950:   0.01527920
+        |   Estimated error at iter   1000:   0.01377120
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    56:  ( 0.7500,  0.3789,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89245983E+00
+        |   Estimated error at iter     50:   1.06915047
+        |   Estimated error at iter    100:   0.14936953
+        |   Estimated error at iter    150:   0.10111665
+        |   Estimated error at iter    200:   0.11446985
+        |   Estimated error at iter    250:   0.09884622
+        |   Estimated error at iter    300:   0.04122474
+        |   Estimated error at iter    350:   0.04777741
+        |   Estimated error at iter    400:   0.02171453
+        |   Estimated error at iter    450:   0.03297073
+        |   Estimated error at iter    500:   0.03821971
+        |   Estimated error at iter    550:   0.01296007
+        |   Estimated error at iter    600:   0.02133670
+        |   Estimated error at iter    650:   0.01062112
+        |   Estimated error at iter    700:   0.01407761
+        |   Estimated error at iter    750:   0.01062246
+        |   Estimated error at iter    800:   0.01442740
+        |   Estimated error at iter    850:   0.00797940
+        |   Estimated error at iter    900:   0.01561366
+        |   Estimated error at iter    950:   0.01699553
+        |   Estimated error at iter   1000:   0.01283017
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    57:  ( 0.8750,  0.0000,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89245295E+00
+        |   Estimated error at iter     50:   1.06890477
+        |   Estimated error at iter    100:   0.11974196
+        |   Estimated error at iter    150:   0.07812958
+        |   Estimated error at iter    200:   0.08899927
+        |   Estimated error at iter    250:   0.04424020
+        |   Estimated error at iter    300:   0.04038549
+        |   Estimated error at iter    350:   0.02275386
+        |   Estimated error at iter    400:   0.03802771
+        |   Estimated error at iter    450:   0.05820588
+        |   Estimated error at iter    500:   0.04569512
+        |   Estimated error at iter    550:   0.02822692
+        |   Estimated error at iter    600:   0.03243660
+        |   Estimated error at iter    650:   0.02248785
+        |   Estimated error at iter    700:   0.03107030
+        |   Estimated error at iter    750:   0.02150860
+        |   Estimated error at iter    800:   0.01277492
+        |   Estimated error at iter    850:   0.01388074
+        |   Estimated error at iter    900:   0.01834777
+        |   Estimated error at iter    950:   0.00825233
+        |   Estimated error at iter   1000:   0.00695270
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    58:  ( 0.8750,  0.0541,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89245297E+00
+        |   Estimated error at iter     50:   1.06890407
+        |   Estimated error at iter    100:   0.12116789
+        |   Estimated error at iter    150:   0.08135831
+        |   Estimated error at iter    200:   0.07279970
+        |   Estimated error at iter    250:   0.04923852
+        |   Estimated error at iter    300:   0.04988102
+        |   Estimated error at iter    350:   0.03855505
+        |   Estimated error at iter    400:   0.03816105
+        |   Estimated error at iter    450:   0.04242222
+        |   Estimated error at iter    500:   0.04009790
+        |   Estimated error at iter    550:   0.02998626
+        |   Estimated error at iter    600:   0.02646333
+        |   Estimated error at iter    650:   0.02719746
+        |   Estimated error at iter    700:   0.01495832
+        |   Estimated error at iter    750:   0.01431653
+        |   Estimated error at iter    800:   0.01009156
+        |   Estimated error at iter    850:   0.01235437
+        |   Estimated error at iter    900:   0.01023320
+        |   Estimated error at iter    950:   0.00766137
+        |   Estimated error at iter   1000:   0.00986829
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    59:  ( 0.8750,  0.1083,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89247434E+00
+        |   Estimated error at iter     50:   1.06890832
+        |   Estimated error at iter    100:   0.12197688
+        |   Estimated error at iter    150:   0.08946906
+        |   Estimated error at iter    200:   0.05773078
+        |   Estimated error at iter    250:   0.07439164
+        |   Estimated error at iter    300:   0.04206398
+        |   Estimated error at iter    350:   0.05365001
+        |   Estimated error at iter    400:   0.04627040
+        |   Estimated error at iter    450:   0.04297009
+        |   Estimated error at iter    500:   0.03548337
+        |   Estimated error at iter    550:   0.02511388
+        |   Estimated error at iter    600:   0.02244365
+        |   Estimated error at iter    650:   0.03247081
+        |   Estimated error at iter    700:   0.01951993
+        |   Estimated error at iter    750:   0.01809579
+        |   Estimated error at iter    800:   0.01704348
+        |   Estimated error at iter    850:   0.01323196
+        |   Estimated error at iter    900:   0.01144052
+        |   Estimated error at iter    950:   0.00952083
+        |   Estimated error at iter   1000:   0.00916906
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    60:  ( 0.8750,  0.1624,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89246697E+00
+        |   Estimated error at iter     50:   1.06890392
+        |   Estimated error at iter    100:   0.12538888
+        |   Estimated error at iter    150:   0.10309440
+        |   Estimated error at iter    200:   0.08255167
+        |   Estimated error at iter    250:   0.10449615
+        |   Estimated error at iter    300:   0.05968058
+        |   Estimated error at iter    350:   0.05507595
+        |   Estimated error at iter    400:   0.04166061
+        |   Estimated error at iter    450:   0.04126452
+        |   Estimated error at iter    500:   0.03924676
+        |   Estimated error at iter    550:   0.03165465
+        |   Estimated error at iter    600:   0.01979452
+        |   Estimated error at iter    650:   0.01689177
+        |   Estimated error at iter    700:   0.02340970
+        |   Estimated error at iter    750:   0.02374155
+        |   Estimated error at iter    800:   0.01550427
+        |   Estimated error at iter    850:   0.01189085
+        |   Estimated error at iter    900:   0.01136824
+        |   Estimated error at iter    950:   0.01287009
+        |   Estimated error at iter   1000:   0.00988547
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    61:  ( 0.8750,  0.2165,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89246700E+00
+        |   Estimated error at iter     50:   1.06889979
+        |   Estimated error at iter    100:   0.12552045
+        |   Estimated error at iter    150:   0.10493378
+        |   Estimated error at iter    200:   0.09860258
+        |   Estimated error at iter    250:   0.11611928
+        |   Estimated error at iter    300:   0.08216458
+        |   Estimated error at iter    350:   0.07838720
+        |   Estimated error at iter    400:   0.04710384
+        |   Estimated error at iter    450:   0.03949138
+        |   Estimated error at iter    500:   0.02715404
+        |   Estimated error at iter    550:   0.03922684
+        |   Estimated error at iter    600:   0.01993975
+        |   Estimated error at iter    650:   0.02018338
+        |   Estimated error at iter    700:   0.02750380
+        |   Estimated error at iter    750:   0.01961079
+        |   Estimated error at iter    800:   0.01728853
+        |   Estimated error at iter    850:   0.00976311
+        |   Estimated error at iter    900:   0.00760075
+        |   Estimated error at iter    950:   0.00725877
+        |   Estimated error at iter   1000:   0.01267476
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    62:  ( 0.8750,  0.2706,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89246698E+00
+        |   Estimated error at iter     50:   1.06890395
+        |   Estimated error at iter    100:   0.12439363
+        |   Estimated error at iter    150:   0.09917023
+        |   Estimated error at iter    200:   0.08638954
+        |   Estimated error at iter    250:   0.10165976
+        |   Estimated error at iter    300:   0.05445315
+        |   Estimated error at iter    350:   0.06185308
+        |   Estimated error at iter    400:   0.03663394
+        |   Estimated error at iter    450:   0.04040485
+        |   Estimated error at iter    500:   0.03385034
+        |   Estimated error at iter    550:   0.02523807
+        |   Estimated error at iter    600:   0.02144551
+        |   Estimated error at iter    650:   0.01299148
+        |   Estimated error at iter    700:   0.02245013
+        |   Estimated error at iter    750:   0.01397491
+        |   Estimated error at iter    800:   0.01821017
+        |   Estimated error at iter    850:   0.00888271
+        |   Estimated error at iter    900:   0.01375613
+        |   Estimated error at iter    950:   0.01228678
+        |   Estimated error at iter   1000:   0.00641284
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    63:  ( 0.8750,  0.3248,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89247434E+00
+        |   Estimated error at iter     50:   1.06890826
+        |   Estimated error at iter    100:   0.12052839
+        |   Estimated error at iter    150:   0.08458457
+        |   Estimated error at iter    200:   0.05629554
+        |   Estimated error at iter    250:   0.06890944
+        |   Estimated error at iter    300:   0.02453050
+        |   Estimated error at iter    350:   0.05479551
+        |   Estimated error at iter    400:   0.04970710
+        |   Estimated error at iter    450:   0.04292711
+        |   Estimated error at iter    500:   0.04029694
+        |   Estimated error at iter    550:   0.01775656
+        |   Estimated error at iter    600:   0.02883117
+        |   Estimated error at iter    650:   0.02696961
+        |   Estimated error at iter    700:   0.01918039
+        |   Estimated error at iter    750:   0.01425304
+        |   Estimated error at iter    800:   0.01415009
+        |   Estimated error at iter    850:   0.00787425
+        |   Estimated error at iter    900:   0.01474382
+        |   Estimated error at iter    950:   0.01044899
+        |   Estimated error at iter   1000:   0.01046867
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+        |-------------------------------------------------------------
+        ! k-point #    64:  ( 0.8750,  0.3789,  0.0000),  0.0312,   1
+        |-------------------------------------------------------------
+ okvan= T
+        |   Norm of the initial Lanczos vector: 0.89245297E+00
+        |   Estimated error at iter     50:   1.06890406
+        |   Estimated error at iter    100:   0.12017010
+        |   Estimated error at iter    150:   0.07754476
+        |   Estimated error at iter    200:   0.06577156
+        |   Estimated error at iter    250:   0.05302737
+        |   Estimated error at iter    300:   0.03791144
+        |   Estimated error at iter    350:   0.03642928
+        |   Estimated error at iter    400:   0.03639757
+        |   Estimated error at iter    450:   0.04698579
+        |   Estimated error at iter    500:   0.03625790
+        |   Estimated error at iter    550:   0.02755627
+        |   Estimated error at iter    600:   0.02107344
+        |   Estimated error at iter    650:   0.02428446
+        |   Estimated error at iter    700:   0.01920918
+        |   Estimated error at iter    750:   0.02213351
+        |   Estimated error at iter    800:   0.01252561
+        |   Estimated error at iter    850:   0.01276625
+        |   Estimated error at iter    900:   0.01521543
+        |   Estimated error at iter    950:   0.01138203
+        |   Estimated error at iter   1000:   0.00913750
+        !   XANES not converged after  1000 iterations
+        !   Estimated final error after   1000iterations: T
+
+     Results of STEP 1 successfully written in x_save_file
+     x_save_file name: 
+     ->  xspectra.save                                                    
+     x_save_file version:  2
+
+     ... End STEP 1 ...
+
+     ... Begin STEP 2 ...
+
+     The spectrum is calculated using the following parameters:
+        energy-zero of the spectrum [eV]:    3.3662
+        the occupied states are elimintate from the spectrum
+        xemin [eV]: -10.00
+        xemax [eV]:  40.00
+        xnepoint: 1000
+        constant broadening parameter [eV]:    0.200
+        Core level energy [eV]:  -284.2    
+         (from electron binding energy of neutral atoms in X-ray data booklet)
+
+     Cross-section successfully written in xanes.dat
+
+     ... End STEP 2 ...
+
+     xanes        :  17432.89s CPU  17526.13s WALL (       1 calls)
+
+     -------------------------------------------------------------------------
+                                END JOB XSpectra
+     -------------------------------------------------------------------------
+

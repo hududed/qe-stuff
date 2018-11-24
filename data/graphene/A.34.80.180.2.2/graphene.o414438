@@ -1,0 +1,199 @@
+forrtl: severe (24): end-of-file during read, unit -5, file Internal List-Directed Read
+Image              PC                Routine            Line        Source             
+pw.x               0000000000C78C03  Unknown               Unknown  Unknown
+pw.x               0000000000CA63FC  Unknown               Unknown  Unknown
+pw.x               0000000000CA4915  Unknown               Unknown  Unknown
+pw.x               00000000009FDFD5  Unknown               Unknown  Unknown
+pw.x               00000000008F0BF0  Unknown               Unknown  Unknown
+pw.x               000000000041FEAD  Unknown               Unknown  Unknown
+pw.x               000000000041FE1E  Unknown               Unknown  Unknown
+libc.so.6          00007FA2D339ED1D  Unknown               Unknown  Unknown
+pw.x               000000000041FD29  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit -5, file Internal List-Directed Read
+Image              PC                Routine            Line        Source             
+pw.x               0000000000C78C03  Unknown               Unknown  Unknown
+pw.x               0000000000CA63FC  Unknown               Unknown  Unknown
+pw.x               0000000000CA4915  Unknown               Unknown  Unknown
+pw.x               00000000009FDFD5  Unknown               Unknown  Unknown
+pw.x               00000000008F0BF0  Unknown               Unknown  Unknown
+pw.x               000000000041FEAD  Unknown               Unknown  Unknown
+pw.x               000000000041FE1E  Unknown               Unknown  Unknown
+libc.so.6          00007FE550D7CD1D  Unknown               Unknown  Unknown
+pw.x               000000000041FD29  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit -5, file Internal List-Directed Read
+Image              PC                Routine            Line        Source             
+pw.x               0000000000C78C03  Unknown               Unknown  Unknown
+pw.x               0000000000CA63FC  Unknown               Unknown  Unknown
+pw.x               0000000000CA4915  Unknown               Unknown  Unknown
+pw.x               00000000009FDFD5  Unknown               Unknown  Unknown
+pw.x               00000000008F0BF0  Unknown               Unknown  Unknown
+pw.x               000000000041FEAD  Unknown               Unknown  Unknown
+pw.x               000000000041FE1E  Unknown               Unknown  Unknown
+libc.so.6          00007F24AD5E7D1D  Unknown               Unknown  Unknown
+pw.x               000000000041FD29  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit -5, file Internal List-Directed Read
+Image              PC                Routine            Line        Source             
+pw.x               0000000000C78C03  Unknown               Unknown  Unknown
+pw.x               0000000000CA63FC  Unknown               Unknown  Unknown
+pw.x               0000000000CA4915  Unknown               Unknown  Unknown
+pw.x               00000000009FDFD5  Unknown               Unknown  Unknown
+pw.x               00000000008F0BF0  Unknown               Unknown  Unknown
+pw.x               000000000041FEAD  Unknown               Unknown  Unknown
+pw.x               000000000041FE1E  Unknown               Unknown  Unknown
+libc.so.6          00007F38EFD64D1D  Unknown               Unknown  Unknown
+pw.x               000000000041FD29  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit -5, file Internal List-Directed Read
+Image              PC                Routine            Line        Source             
+pw.x               0000000000C78C03  Unknown               Unknown  Unknown
+pw.x               0000000000CA63FC  Unknown               Unknown  Unknown
+pw.x               0000000000CA4915  Unknown               Unknown  Unknown
+pw.x               00000000009FDFD5  Unknown               Unknown  Unknown
+pw.x               00000000008F0BF0  Unknown               Unknown  Unknown
+pw.x               000000000041FEAD  Unknown               Unknown  Unknown
+pw.x               000000000041FE1E  Unknown               Unknown  Unknown
+libc.so.6          00007FDAF07C9D1D  Unknown               Unknown  Unknown
+pw.x               000000000041FD29  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit -5, file Internal List-Directed Read
+Image              PC                Routine            Line        Source             
+pw.x               0000000000C78C03  Unknown               Unknown  Unknown
+pw.x               0000000000CA63FC  Unknown               Unknown  Unknown
+pw.x               0000000000CA4915  Unknown               Unknown  Unknown
+pw.x               00000000009FDFD5  Unknown               Unknown  Unknown
+pw.x               00000000008F0BF0  Unknown               Unknown  Unknown
+pw.x               000000000041FEAD  Unknown               Unknown  Unknown
+pw.x               000000000041FE1E  Unknown               Unknown  Unknown
+libc.so.6          00007F87BF3EBD1D  Unknown               Unknown  Unknown
+pw.x               000000000041FD29  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit -5, file Internal List-Directed Read
+Image              PC                Routine            Line        Source             
+pw.x               0000000000C78C03  Unknown               Unknown  Unknown
+pw.x               0000000000CA63FC  Unknown               Unknown  Unknown
+pw.x               0000000000CA4915  Unknown               Unknown  Unknown
+pw.x               00000000009FDFD5  Unknown               Unknown  Unknown
+pw.x               00000000008F0BF0  Unknown               Unknown  Unknown
+pw.x               000000000041FEAD  Unknown               Unknown  Unknown
+pw.x               000000000041FE1E  Unknown               Unknown  Unknown
+libc.so.6          00007F550B3D5D1D  Unknown               Unknown  Unknown
+pw.x               000000000041FD29  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit -5, file Internal List-Directed Read
+Image              PC                Routine            Line        Source             
+pw.x               0000000000C78C03  Unknown               Unknown  Unknown
+pw.x               0000000000CA63FC  Unknown               Unknown  Unknown
+pw.x               0000000000CA4915  Unknown               Unknown  Unknown
+pw.x               00000000009FDFD5  Unknown               Unknown  Unknown
+pw.x               00000000008F0BF0  Unknown               Unknown  Unknown
+pw.x               000000000041FEAD  Unknown               Unknown  Unknown
+pw.x               000000000041FE1E  Unknown               Unknown  Unknown
+libc.so.6          00007F4643EDFD1D  Unknown               Unknown  Unknown
+pw.x               000000000041FD29  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit -5, file Internal List-Directed Read
+Image              PC                Routine            Line        Source             
+pw.x               0000000000C78C03  Unknown               Unknown  Unknown
+pw.x               0000000000CA63FC  Unknown               Unknown  Unknown
+pw.x               0000000000CA4915  Unknown               Unknown  Unknown
+pw.x               00000000009FDFD5  Unknown               Unknown  Unknown
+pw.x               00000000008F0BF0  Unknown               Unknown  Unknown
+pw.x               000000000041FEAD  Unknown               Unknown  Unknown
+pw.x               000000000041FE1E  Unknown               Unknown  Unknown
+libc.so.6          00007FEC8DEA5D1D  Unknown               Unknown  Unknown
+pw.x               000000000041FD29  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit -5, file Internal List-Directed Read
+Image              PC                Routine            Line        Source             
+pw.x               0000000000C78C03  Unknown               Unknown  Unknown
+pw.x               0000000000CA63FC  Unknown               Unknown  Unknown
+pw.x               0000000000CA4915  Unknown               Unknown  Unknown
+pw.x               00000000009FDFD5  Unknown               Unknown  Unknown
+pw.x               00000000008F0BF0  Unknown               Unknown  Unknown
+pw.x               000000000041FEAD  Unknown               Unknown  Unknown
+pw.x               000000000041FE1E  Unknown               Unknown  Unknown
+libc.so.6          00007FCB84149D1D  Unknown               Unknown  Unknown
+pw.x               000000000041FD29  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit -5, file Internal List-Directed Read
+Image              PC                Routine            Line        Source             
+pw.x               0000000000C78C03  Unknown               Unknown  Unknown
+pw.x               0000000000CA63FC  Unknown               Unknown  Unknown
+pw.x               0000000000CA4915  Unknown               Unknown  Unknown
+pw.x               00000000009FDFD5  Unknown               Unknown  Unknown
+pw.x               00000000008F0BF0  Unknown               Unknown  Unknown
+pw.x               000000000041FEAD  Unknown               Unknown  Unknown
+pw.x               000000000041FE1E  Unknown               Unknown  Unknown
+libc.so.6          00007FD492193D1D  Unknown               Unknown  Unknown
+pw.x               000000000041FD29  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit -5, file Internal List-Directed Read
+Image              PC                Routine            Line        Source             
+pw.x               0000000000C78C03  Unknown               Unknown  Unknown
+pw.x               0000000000CA63FC  Unknown               Unknown  Unknown
+pw.x               0000000000CA4915  Unknown               Unknown  Unknown
+pw.x               00000000009FDFD5  Unknown               Unknown  Unknown
+pw.x               00000000008F0BF0  Unknown               Unknown  Unknown
+pw.x               000000000041FEAD  Unknown               Unknown  Unknown
+pw.x               000000000041FE1E  Unknown               Unknown  Unknown
+libc.so.6          00007F845D727D1D  Unknown               Unknown  Unknown
+pw.x               000000000041FD29  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit -5, file Internal List-Directed Read
+Image              PC                Routine            Line        Source             
+pw.x               0000000000C78C03  Unknown               Unknown  Unknown
+pw.x               0000000000CA63FC  Unknown               Unknown  Unknown
+pw.x               0000000000CA4915  Unknown               Unknown  Unknown
+pw.x               00000000009FDFD5  Unknown               Unknown  Unknown
+pw.x               00000000008F0BF0  Unknown               Unknown  Unknown
+pw.x               000000000041FEAD  Unknown               Unknown  Unknown
+pw.x               000000000041FE1E  Unknown               Unknown  Unknown
+libc.so.6          00007F054F7E6D1D  Unknown               Unknown  Unknown
+pw.x               000000000041FD29  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit -5, file Internal List-Directed Read
+Image              PC                Routine            Line        Source             
+pw.x               0000000000C78C03  Unknown               Unknown  Unknown
+pw.x               0000000000CA63FC  Unknown               Unknown  Unknown
+pw.x               0000000000CA4915  Unknown               Unknown  Unknown
+pw.x               00000000009FDFD5  Unknown               Unknown  Unknown
+pw.x               00000000008F0BF0  Unknown               Unknown  Unknown
+pw.x               000000000041FEAD  Unknown               Unknown  Unknown
+pw.x               000000000041FE1E  Unknown               Unknown  Unknown
+libc.so.6          00007FC798E7CD1D  Unknown               Unknown  Unknown
+pw.x               000000000041FD29  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit -5, file Internal List-Directed Read
+Image              PC                Routine            Line        Source             
+pw.x               0000000000C78C03  Unknown               Unknown  Unknown
+pw.x               0000000000CA63FC  Unknown               Unknown  Unknown
+pw.x               0000000000CA4915  Unknown               Unknown  Unknown
+pw.x               00000000009FDFD5  Unknown               Unknown  Unknown
+pw.x               00000000008F0BF0  Unknown               Unknown  Unknown
+pw.x               000000000041FEAD  Unknown               Unknown  Unknown
+pw.x               000000000041FE1E  Unknown               Unknown  Unknown
+libc.so.6          00007FC95EF5BD1D  Unknown               Unknown  Unknown
+pw.x               000000000041FD29  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit -5, file Internal List-Directed Read
+Image              PC                Routine            Line        Source             
+pw.x               0000000000C78C03  Unknown               Unknown  Unknown
+pw.x               0000000000CA63FC  Unknown               Unknown  Unknown
+pw.x               0000000000CA4915  Unknown               Unknown  Unknown
+pw.x               00000000009FDFD5  Unknown               Unknown  Unknown
+pw.x               00000000008F0BF0  Unknown               Unknown  Unknown
+pw.x               000000000041FEAD  Unknown               Unknown  Unknown
+pw.x               000000000041FE1E  Unknown               Unknown  Unknown
+libc.so.6          00007F0EC975ED1D  Unknown               Unknown  Unknown
+pw.x               000000000041FD29  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pw.x               0000000000C80B2E  Unknown               Unknown  Unknown
+libpthread.so.0    00007F87BF7707E0  Unknown               Unknown  Unknown
+libc.so.6          00007F87BF4AC283  Unknown               Unknown  Unknown
+libopen-pal.so.13  00007F87BE47A48D  Unknown               Unknown  Unknown
+libopen-pal.so.13  00007F87BE46EF7C  Unknown               Unknown  Unknown
+libopen-rte.so.12  00007F87BE732834  Unknown               Unknown  Unknown
+libpthread.so.0    00007F87BF768AA1  Unknown               Unknown  Unknown
+libc.so.6          00007F87BF4B5AAD  Unknown               Unknown  Unknown
+
+======================================================================================
+                  Resource Usage on 2016-11-16 21:27:55:
+   Job Id:             414438.r-man2
+   Project:            y35
+   Exit Status:        24
+   Service Units:      0.03
+   NCPUs Requested:    16                     NCPUs Used: 16              
+                                           CPU Time Used: 00:00:07                                   
+   Memory Requested:   8.0GB                 Memory Used: 0B              
+   Walltime requested: 00:30:00            Walltime Used: 00:00:06        
+   JobFS requested:    128.0MB                JobFS used: 0B              
+======================================================================================
